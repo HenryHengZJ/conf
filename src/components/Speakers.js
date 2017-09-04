@@ -49,7 +49,10 @@ const styles = {
     padding: '0',
     backgroundColor: Globals.colors.white,
     borderRadius: 0,
-    margin: 10,
+    margin: 20,
+    '@media(min-width: 720px)': {
+      margin: 10,
+    },
   }),
   cards: css({
     display: 'flex',
