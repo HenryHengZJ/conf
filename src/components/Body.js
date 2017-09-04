@@ -7,12 +7,9 @@ import Venue from './Venue';
 import Speakers from './Speakers';
 import Sponsor from './Sponsor';
 import Supporters from './Supporters';
-import Topics from './Topics';
-import C4P from './C4P';
 import BuyIngressos from './BuyIngressos';
 import Contact from './Contact';
 import Meetup from './Meetup';
-import Help from './Help';
 
 const styles = {
   container: css({

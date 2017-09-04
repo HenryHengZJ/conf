@@ -3,8 +3,6 @@ import { css } from 'glamor';
 
 import Globals from '../utils/Globals';
 
-import Item from './Item';
-
 const styles = {
   container: css({
     // alignSelf: 'flex-end',
@@ -16,7 +14,6 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     '@media(max-width: 720px)': {
-      display: 'block',
       display: 'flex',
       width: '80%',
       margin: '0 auto',

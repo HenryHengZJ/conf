@@ -20,7 +20,7 @@ const styles = {
     padding: '20px 0',
     width: '80%',
     maxWidth: 400,
-    fontSize: 24,
+    fontSize: 22,
     display: 'inline-block',
     fontWeight: 'lighter',
     margin: '0 auto 2em auto',
@@ -28,7 +28,6 @@ const styles = {
     cursor: 'pointer',
     borderRadius: 40,
     textDecoration: 'none',
-    letterSpacing: '1.5px',
     ':hover': {
       backgroundColor: Globals.colors.white,
     },

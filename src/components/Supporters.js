@@ -4,9 +4,6 @@ import Globals from '../utils/Globals';
 
 import Text from './Text';
 
-import tallerImg from '../media/images/sponsors/taller.jpg';
-import quantoImg from '../media/images/sponsors/quanto.jpg';
-import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
 import apolloImg from '../media/images/sponsors/apollo.jpg';
 import meteorImg from '../media/images/sponsors/meteor.jpg';
 import dneImg from '../media/images/sponsors/dne.jpg';
@@ -29,19 +26,18 @@ const styles = {
     color: '#666666',
   }),
   card: css({
-    width: 300,
-    height: 100,
+    width: 200,
+    height: 75,
     '@media(min-width: 721px)': {
-      height: 200,
+      height: 150,
     },
-    // maxWidth: '100%',
     padding: '0',
     backgroundColor: Globals.colors.white,
     borderRadius: 0,
     margin: 10,
     '> img': {
-      maxWidth: 200,
-      maxHeight: 100,
+      maxWidth: 150,
+      maxHeight: 75,
       margin: '0 auto',
       display: 'block',
     },
@@ -70,7 +66,6 @@ const Supporters = [
   },
   {
     id: 8,
-
     name: 'dne',
     avatar: dneImg,
   },
@@ -91,7 +86,6 @@ const Supporters = [
   },
   {
     id: 7,
-
     name: 'greenmile',
     avatar: greenmileImg,
   },
@@ -111,7 +105,7 @@ class TextSupporters extends PureComponent {
           {Supporters.map(sponsor => {
             return (
               <div key={sponsor.id} {...styles.card}>
-                <img src={sponsor.avatar} />
+                <img src={sponsor.avatar} alt={sponsor.name} />
               </div>
             );
           })}

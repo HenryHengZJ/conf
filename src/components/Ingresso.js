@@ -16,7 +16,7 @@ const styles = {
   }),
   link: css({
     color: Globals.colors.background,
-    padding: '20px 100px',
+    padding: '15px 50px',
     background: Globals.colors.main,
     cursor: 'pointer',
     fontWeight: 'lighter',

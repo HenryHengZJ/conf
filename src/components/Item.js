@@ -1,15 +1,12 @@
 import React, { PureComponent } from 'react';
 import { css } from 'glamor';
 
-import Globals from '../utils/Globals';
-
 const styles = {
   container: css({
     '@media(min-width: 720px)': {
       margin: '1em',
     },
   }),
-
   light: css({ color: 'white' }),
 };
 

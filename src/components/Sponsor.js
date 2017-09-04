@@ -7,14 +7,6 @@ import Text from './Text';
 import tallerImg from '../media/images/sponsors/taller.jpg';
 import quantoImg from '../media/images/sponsors/quanto.jpg';
 import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
-import apolloImg from '../media/images/sponsors/apollo.jpg';
-import meteorImg from '../media/images/sponsors/meteor.jpg';
-import dneImg from '../media/images/sponsors/dne.jpg';
-import codamosImg from '../media/images/sponsors/codamos.jpg';
-import rivendelImg from '../media/images/sponsors/rivendel.jpg';
-import jsladiesImg from '../media/images/sponsors/jsladies.jpg';
-import stqImg from '../media/images/sponsors/stq.jpg';
-import greenmileImg from '../media/images/sponsors/greenmile.jpg';
 
 const styles = {
   container: css({
@@ -31,7 +23,7 @@ const styles = {
   }),
   card: css({
     width: 300,
-    height: 100,
+    height: 150,
     '@media(min-width: 721px)': {
       height: 200,
     },
@@ -65,14 +57,14 @@ const Sponsors = [
     avatar: tallerImg,
   },
   {
-    id: 4,
-    name: 'Quanto',
-    avatar: quantoImg,
-  },
-  {
     id: 5,
     name: 'Fullcircle',
     avatar: fullcircleImg,
+  },
+  {
+    id: 4,
+    name: 'Quanto',
+    avatar: quantoImg,
   },
 ];
 
@@ -80,12 +72,12 @@ class TextSponsor extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="Patrocinadores" reverse />
+        <Text title="Patrocínio" reverse />
         <div {...styles.cards}>
           {Sponsors.map(sponsor => {
             return (
               <div key={sponsor.id} {...styles.card}>
-                <img src={sponsor.avatar} />
+                <img src={sponsor.avatar} alt={sponsor.name} />
               </div>
             );
           })}

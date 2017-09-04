@@ -5,16 +5,6 @@ import Globals from '../utils/Globals';
 import imgAugusta from '../media/images/theater-augusta.png';
 import Text from './Text';
 
-const urlPhotos = {
-  folha: {
-    url:
-      'http://guia.folha.uol.com.br/teatro/sem-definicao/teatro-augusta-consolacao-724754030.shtml',
-  },
-  veja: {
-    url: 'https://vejasp.abril.com.br/estabelecimento/teatro-augusta/',
-  },
-};
-
 const styles = {
   container: css({
     alignSelf: 'flex-end',

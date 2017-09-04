@@ -233,7 +233,7 @@ class TextContact extends PureComponent {
           </p>
           <p>
             E-mail:<br />
-            <a {...styles.link} mailto="reactconfbr@gmail.com">
+            <a {...styles.link} href="mailto:reactconfbr@gmail.com">
               reactconfbr@gmail.com
             </a>
           </p>

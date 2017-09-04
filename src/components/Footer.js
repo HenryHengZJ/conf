@@ -45,9 +45,6 @@ const styles = {
     bottom: '100%',
     height: '0',
     width: '0',
-    borderColor: 'transparent transparent #ffc819',
-    borderStyle: 'solid',
-    borderWidth: '0 0 3vw 100vw',
   }),
 };
 

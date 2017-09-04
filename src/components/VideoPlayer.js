@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import Cover from 'react-video-cover';
 import VideoBackgroundLoop from '../media/video/background3.webm';
 import MediaQuery from 'react-responsive';
-import Globals from '../utils/Globals';
-import { css } from 'glamor';
-
-import BackgroundPattern from '../media/images/backgroundPattern2.png';
+import BackgroundPattern from '../media/images/backgroundPattern.png';
 
 const style = {
   width: '100vw',
