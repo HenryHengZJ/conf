@@ -15,12 +15,13 @@ const styles = {
     color: Globals.colors.white,
     margin: 0,
     textTransform: 'uppercase',
-    letterSpacing: 4,
-    fontWeight: 'bold',
+    letterSpacing: 3,
     marginLeft: 30,
+    lineHeight: '1em',
+    fontSize: ' 2.827em ',
   }),
   titleSpan: css({
-    color: Globals.colors.primaryLight,
+    color: Globals.colors.main,
   }),
   hrContainer: css({
     width: 25,
@@ -30,11 +31,15 @@ const styles = {
     borderColor: Globals.colors.primaryLight,
   }),
   subtitle: css({
-    color: Globals.colors.primaryLight,
-    textTransform: 'uppercase',
-    fontSize: 17,
+    color: Globals.colors.white,
+    fontSize: ' 1.414em ',
     margin: 0,
+    lineHeight: '1em',
     marginLeft: 30,
+  }),
+  iconflagbr: css({
+    marginRight: 10,
+    width: 30,
   }),
 };
 
@@ -44,13 +49,10 @@ const Title = () =>
       React
       <span {...styles.titleSpan}>Conf</span>
     </h1>
-    <div {...styles.hrContainer}>
-      <hr {...styles.hr} />
-    </div>
 
-    <h5 {...styles.subtitle}>
+    <span {...styles.subtitle}>
       {Globals.location.country} {Globals.date.year}
-    </h5>
+    </span>
   </div>;
 
 export default Title;

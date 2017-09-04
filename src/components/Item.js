@@ -1,46 +1,12 @@
 import React, { PureComponent } from 'react';
 import { css } from 'glamor';
 
-import Globals from '../utils/Globals';
-
 const styles = {
   container: css({
-    borderTop: `3px solid ${Globals.colors.primaryLight}`,
-    textAlign: 'left',
-    margin: '30px',
-    textTransform: 'uppercase',
-    '> h3': {
-      color: Globals.colors.primaryLight,
-      margin: 0,
-      letterSpacing: 2,
-    },
-    '> h2': {
-      margin: 0,
-      letterSpacing: 6,
-    },
-    '> h4': {
-      color: Globals.colors.darken,
-      margin: 0,
-      letterSpacing: 6,
-    },
-    '> p': {
-      color: Globals.colors.primaryLight,
-      letterSpacing: 2,
-    },
-    '> strong': {
-      color: Globals.colors.darken,
-      letterSpacing: 2,
-    },
-    '> span': {
-      color: Globals.colors.primaryLight,
-      letterSpacing: 2,
-    },
-
-    '@media(max-width: 720px)': {
-      margin: '5px',
+    '@media(min-width: 720px)': {
+      margin: '1em',
     },
   }),
-
   light: css({ color: 'white' }),
 };
 

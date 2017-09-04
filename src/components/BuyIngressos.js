@@ -7,32 +7,30 @@ import Text from './Text';
 const styles = {
   container: css({
     alignSelf: 'flex-end',
-    background: '#f0f0f0',
+    background: Globals.colors.secondary,
     width: '100vw',
     display: 'flex',
+    color: Globals.colors.white,
     '@media(max-width: 720px)': {
       alignSelf: 'auto',
     },
   }),
   link: css({
     color: Globals.colors.background,
-    padding: '10px 22px',
-    background: Globals.colors.shout,
-    borderRadius: '4px',
-    border: '1px solid',
-    borderColor: 'transparent',
+    padding: '20px 0',
+    width: '80%',
+    maxWidth: 400,
+    fontSize: 22,
+    display: 'inline-block',
+    fontWeight: 'lighter',
+    margin: '0 auto 2em auto',
+    background: Globals.colors.main,
     cursor: 'pointer',
+    borderRadius: 40,
     textDecoration: 'none',
-    letterSpacing: '1.5px',
-    fontSize: '22px',
-
     ':hover': {
-      backgroundColor: Globals.colors.background,
-      border: '1px solid',
-      borderColor: Globals.colors.primary,
-      color: Globals.colors.primary,
+      backgroundColor: Globals.colors.white,
     },
-
     '@media(max-width: 720px)': {
       display: 'block',
       textAlign: 'center',
@@ -40,11 +38,11 @@ const styles = {
   }),
 };
 
-class TextBuyTickets extends PureComponent {
+class TextBuyIngressos extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="COMPRE AGORA" subtitle="INGRESSOS">
+        <Text title="07 Outubro 2017" subtitle="Sábado, das 8h às 18h">
           <br />
           <a
             href="https://www.sympla.com.br/react-conf-brasil-2017__161239"
@@ -52,7 +50,7 @@ class TextBuyTickets extends PureComponent {
             rel="noopener noreferrer"
             {...styles.link}
           >
-            <b>3º LOTE R$250,00</b>
+            Ingressos Disponíveis
           </a>
         </Text>
       </div>
@@ -60,4 +58,4 @@ class TextBuyTickets extends PureComponent {
   }
 }
 
-export default TextBuyTickets;
+export default TextBuyIngressos;

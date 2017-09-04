@@ -15,7 +15,7 @@ const styles = {
     },
   }),
   link: css({
-    color: '#666666',
+    color: 'black',
   }),
   transition: css({
     transition: Globals.transitions.primary,
@@ -26,7 +26,7 @@ class TextContact extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="CONTATO" subtitle="Entre para a nossa comunidade">
+        <Text title="Contato" subtitle="Acesse nossas redes">
           <span>
             <a
               title="slack"
@@ -229,6 +229,12 @@ class TextContact extends PureComponent {
             Ajude a manter esta página. Envie sua Pull Request:<br />
             <a {...styles.link} href="https://github.com/react-brasil/conf">
               https://github.com/react-brasil/conf
+            </a>
+          </p>
+          <p>
+            E-mail:<br />
+            <a {...styles.link} href="mailto:reactconfbr@gmail.com">
+              reactconfbr@gmail.com
             </a>
           </p>
         </Text>

@@ -3,18 +3,29 @@ import { css } from 'glamor';
 
 import Globals from '../utils/Globals';
 
-import Item from './Item';
-
 const styles = {
   container: css({
-    alignSelf: 'flex-end',
+    // alignSelf: 'flex-end',
     display: 'flex',
+    margin: '0',
+    color: Globals.colors.white,
+    fontSize: 40,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
     '@media(max-width: 720px)': {
-      alignSelf: 'flex-end',
-      display: 'block',
+      display: 'flex',
       width: '80%',
       margin: '0 auto',
     },
+  }),
+  header: css({
+    fontSize: 30,
+    margin: '0 auto',
+  }),
+  text: css({
+    fontSize: 20,
+    margin: '0 auto 4em auto',
   }),
 };
 
@@ -22,23 +33,12 @@ class Infos extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Item title="DATA" subtitle={Globals.date.full}>
-          <p>
-            {Globals.date.hour}
-          </p>
-        </Item>
-
-        <Item title="LOCAL" subtitle={Globals.location.city}>
-          <p>
-            <strong>
-              {Globals.location.locale}
-            </strong>
-            <br />
-            <span>
-              {Globals.location.address}
-            </span>
-          </p>
-        </Item>
+        <p {...styles.header}>
+          {Globals.date.full}
+        </p>
+        <p {...styles.text}>
+          {Globals.location.city}
+        </p>
       </div>
     );
   }

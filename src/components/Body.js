@@ -1,20 +1,20 @@
 import React, { PureComponent } from 'react';
 import { css } from 'glamor';
+import Globals from '../utils/Globals';
 
-import Pitch from './Pitch';
+import Event from './Event';
 import Venue from './Venue';
 import Speakers from './Speakers';
 import Sponsor from './Sponsor';
-import Topics from './Topics';
-import C4P from './C4P';
-import BuyTickets from './BuyTickets';
+import Supporters from './Supporters';
+import BuyIngressos from './BuyIngressos';
 import Contact from './Contact';
 import Meetup from './Meetup';
-import Help from './Help';
 
 const styles = {
   container: css({
     display: 'flex',
+    background: Globals.colors.background,
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
@@ -26,13 +26,13 @@ class App extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Pitch />
+        <Event />
         <Venue />
         <Speakers />
-        <BuyTickets />
+        <BuyIngressos />
         <Sponsor />
+        <Supporters />
         <Meetup />
-        <Help />
         <Contact />
       </div>
     );

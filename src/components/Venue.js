@@ -2,15 +2,19 @@ import React, { PureComponent } from 'react';
 import { css } from 'glamor';
 
 import Globals from '../utils/Globals';
-
+import imgAugusta from '../media/images/theater-augusta.png';
 import Text from './Text';
 
 const styles = {
   container: css({
     alignSelf: 'flex-end',
-    background: '#ffffff',
+    color: Globals.colors.white,
+    background: Globals.colors.base,
     width: '100vw',
     display: 'flex',
+    '> img': {
+      maxWidth: '100%',
+    },
     '@media(max-width: 720px)': {
       alignSelf: 'auto',
     },
@@ -21,25 +25,18 @@ class TextVenue extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="THE WORLD IS A STAGE" subtitle="LOCAL">
+        <Text title="Localização" subtitle="Teatro Augusta, São Paulo, Brasil">
           <p>
-            {Globals.pitch.locale}
+            {Globals.event.locale}
           </p>
           <p>
-            <strong>Teatro Augusta</strong>
             <br />
-            No coração de São Paulo, o histórico palco será a casa de
-            apresentações únicas e inéditas.
+            No coração de São Paulo, o histórico Teatro Augusta será o palco de
+            apresentações únicas.
           </p>
-          <strong>
-            Rua Augusta, 943 - Cerqueira César, São Paulo / SP - Brasil
-          </strong>
-          <img
-            src="http://i.imgur.com/xSpn9YZ.png"
-            alt="Teatro Augusta"
-            title="Teatro Augusta"
-          />
-          <a href="https://goo.gl/maps/CYJBVGHz3Nk">Google Maps</a>
+          <img src={imgAugusta} alt="Teatro Augusta" title="Teatro Augusta" />
+          <small>Foto: Divulgação</small>
+          <p>Rua Augusta, 943 - Cerqueira César, São Paulo / SP - Brasil</p>
         </Text>
       </div>
     );

@@ -16,24 +16,19 @@ const styles = {
   }),
   link: css({
     color: Globals.colors.background,
-    padding: '10px 22px',
-    background: Globals.colors.shout,
-    borderRadius: '4px',
-    border: '1px solid',
-    borderColor: 'transparent',
+    padding: '15px 50px',
+    background: Globals.colors.main,
     cursor: 'pointer',
+    fontWeight: 'lighter',
     textDecoration: 'none',
     position: 'absolute',
     top: '35px',
     right: '30px',
-    letterSpacing: '1.5px',
-    fontSize: '22px',
+    fontSize: 20,
+    borderRadius: 40,
 
     ':hover': {
-      backgroundColor: Globals.colors.background,
-      border: '1px solid',
-      borderColor: Globals.colors.primaryLight,
-      color: Globals.colors.primaryLight,
+      backgroundColor: Globals.colors.white,
     },
 
     '@media(max-width: 720px)': {
@@ -47,7 +42,7 @@ const styles = {
   }),
 };
 
-class Ticket extends PureComponent {
+class Ingresso extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
@@ -57,11 +52,11 @@ class Ticket extends PureComponent {
           rel="noopener noreferrer"
           {...styles.link}
         >
-          <b>INGRESSOS</b>
+          <b>Ingressos</b>
         </a>
       </div>
     );
   }
 }
 
-export default Ticket;
+export default Ingresso;
