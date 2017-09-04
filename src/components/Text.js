@@ -5,7 +5,6 @@ import Globals from '../utils/Globals';
 
 const styles = {
   container: css({
-    // borderTop: `3px solid ${Globals.colors.primary}`,
     width: '100%',
     fontWeight: 'lighter',
     maxWidth: 1000,
@@ -17,13 +16,10 @@ const styles = {
     },
     '> h2': {
       margin: '1em',
-      // fontWeight: 'lighter',
       fontSize: '2.827em',
-      // color: Globals.colors.header,
     },
     '> h3': {
       fontWeight: 'lighter',
-      // color: Globals.colors.subheader,
       fontSize: '1.999em',
       margin: '1em',
     },
@@ -40,8 +36,6 @@ const styles = {
       fontSize: '1em',
     },
     '> p': {
-      // color: Globals.colors.primary,
-      // fontSize: '20px',
       margin: '1em',
       fontSize: '1em',
     },
@@ -52,7 +46,6 @@ const styles = {
       fontSize: '1em',
     },
     '> p span': {
-      // fontSize: '26px',
       fontSize: '1em',
       color: Globals.colors.primary,
       display: 'inline-block',

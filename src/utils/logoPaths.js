@@ -4,8 +4,9 @@ import Globals from '../utils/Globals';
 
 const styles = {
   ico: css({
-    width: 520,
-    height: 520,
+    width: 420,
+    height: 420,
+    margin: '0 auto',
     '@media(max-width: 720px)': {
       width: 320,
       height: 320,

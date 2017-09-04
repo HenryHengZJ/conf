@@ -17,7 +17,6 @@ const styles = {
     margin: 0,
     textTransform: 'uppercase',
     letterSpacing: 3,
-    // fontWeight: 'bold',
     marginLeft: 30,
     lineHeight: '1em',
     fontSize: ' 2.827em ',
@@ -34,7 +33,6 @@ const styles = {
   }),
   subtitle: css({
     color: Globals.colors.white,
-    // textTransform: 'uppercase',
     fontSize: ' 1.414em ',
     margin: 0,
     lineHeight: '1em',
@@ -54,7 +52,6 @@ const Title = () =>
     </h1>
 
     <span {...styles.subtitle}>
-      {/* <img src={iconFlagBr} {...styles.iconflagbr} /> */}
       {Globals.location.country} {Globals.date.year}
     </span>
   </div>;

@@ -8,12 +8,8 @@ import Title from './Title';
 import Ingresso from './Ingresso';
 import VideoPlayer from './VideoPlayer';
 
-import BackgroundPattern from '../media/images/backgroundPattern.png';
-import VideoBackgroundLoop from '../media/video/background.webm';
-
 const styles = {
   container: css({
-    // backgroundImage: `url(${BackgroundPattern})`,
     background: Globals.colors.transparent,
     color: Globals.colors.primary,
     width: '100%',

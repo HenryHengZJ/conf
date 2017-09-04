@@ -1,17 +1,38 @@
 import React, { Component } from 'react';
 import Cover from 'react-video-cover';
 import VideoBackgroundLoop from '../media/video/background3.webm';
+import MediaQuery from 'react-responsive';
+import Globals from '../utils/Globals';
+import { css } from 'glamor';
+
+import BackgroundPattern from '../media/images/backgroundPattern2.png';
 
 const style = {
   width: '100vw',
   height: '100vh',
   position: 'fixed',
-  // opacity: '0.5',
   background: 'black',
   top: 0,
   left: 0,
   zIndex: -1,
 };
+
+const styleMobile = {
+  backgroundImage: `url(${BackgroundPattern})`,
+  color: 'white',
+  width: '100vw',
+  height: '100vh',
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  zIndex: -1,
+  minWidth: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+};
+
 class VideoPlayer extends Component {
   state = {
     resizeNotifier: () => {},
@@ -25,16 +46,23 @@ class VideoPlayer extends Component {
     };
 
     return (
-      <div style={style}>
-        <Cover
-          videoOptions={videoOptions}
-          remeasureOnWindowResize
-          getResizeNotifier={resizeNotifier => {
-            this.setState({
-              resizeNotifier,
-            });
-          }}
-        />
+      <div>
+        <MediaQuery query="(min-device-width: 1224px)">
+          <div style={style}>
+            <Cover
+              videoOptions={videoOptions}
+              remeasureOnWindowResize
+              getResizeNotifier={resizeNotifier => {
+                this.setState({
+                  resizeNotifier,
+                });
+              }}
+            />
+          </div>
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 1224px)">
+          <div style={styleMobile} />
+        </MediaQuery>
       </div>
     );
   }

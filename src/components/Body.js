@@ -6,6 +6,7 @@ import Event from './Event';
 import Venue from './Venue';
 import Speakers from './Speakers';
 import Sponsor from './Sponsor';
+import Supporters from './Supporters';
 import Topics from './Topics';
 import C4P from './C4P';
 import BuyIngressos from './BuyIngressos';
@@ -33,6 +34,7 @@ class App extends PureComponent {
         <Speakers />
         <BuyIngressos />
         <Sponsor />
+        <Supporters />
         <Meetup />
         <Contact />
       </div>

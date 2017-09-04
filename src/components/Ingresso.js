@@ -16,25 +16,19 @@ const styles = {
   }),
   link: css({
     color: Globals.colors.background,
-    padding: '20px 30px',
+    padding: '20px 100px',
     background: Globals.colors.main,
-    // borderRadius: '4px',
-    // border: '1px solid',
-    // borderColor: 'transparent',
     cursor: 'pointer',
-    fontWeight: 'light',
+    fontWeight: 'lighter',
     textDecoration: 'none',
     position: 'absolute',
     top: '35px',
     right: '30px',
-    letterSpacing: '1.5px',
-    fontSize: '22px',
+    fontSize: 20,
+    borderRadius: 40,
 
     ':hover': {
       backgroundColor: Globals.colors.white,
-      // border: '1px solid',
-      // borderColor: Globals.colors.primary,
-      // color: Globals.colors.primary,
     },
 
     '@media(max-width: 720px)': {

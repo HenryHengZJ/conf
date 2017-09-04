@@ -4,6 +4,8 @@ import Globals from '../utils/Globals';
 
 import Text from './Text';
 
+import stubailoImg from '../media/images/speakers/sashko-pb.jpg';
+import jbaxleyiiiImg from '../media/images/speakers/jbaxleyiii-pb.jpg';
 import sibeliusImg from '../media/images/speakers/sibelius-pb.jpg';
 import daciukImg from '../media/images/speakers/daciuk-pb.jpg';
 import marsiglioImg from '../media/images/speakers/marsiglio-pb.jpg';
@@ -67,6 +69,22 @@ const styles = {
 };
 
 const Speakers = [
+  {
+    id: 7,
+    name: 'Sashko Stubailo',
+    theme: 'The GraphQL and Apollo stack: Connecting everything together',
+    origin: 'San Francisco, California, EUA',
+    github: 'https://github.com/stubailo',
+    avatar: stubailoImg,
+  },
+  {
+    id: 8,
+    name: 'James Baxtley',
+    theme: 'Statically Typing your GraphQL App',
+    origin: ' Anderson, South Carolina, EUA',
+    github: 'https://github.com/jbaxleyiii',
+    avatar: jbaxleyiiiImg,
+  },
   {
     id: 1,
     name: 'Sibelius Seraphini',

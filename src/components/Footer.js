@@ -10,7 +10,7 @@ const styles = {
     color: Globals.colors.white,
     width: '100%',
     flexDirection: 'column',
-    '@media(min-width: 721px)': {
+    '@media(min-width: 720px)': {
       width: '100%',
       display: 'flex',
       alignItems: 'center',
@@ -22,9 +22,10 @@ const styles = {
     width: '80%',
     maxWidth: 1000,
     display: 'flex',
+    padding: 20,
     flexDirection: 'column',
     justifyContent: 'space-between',
-    '@media(min-width: 721px)': {
+    '@media(min-width: 720px)': {
       width: '100%',
       justifyContent: 'space-between',
       display: 'flex',

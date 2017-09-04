@@ -10,14 +10,19 @@ const styles = {
     background: Globals.colors.main,
     width: '100vw',
     display: 'flex',
+    paddingBottom: 30,
     '@media(max-width: 720px)': {
       alignSelf: 'auto',
     },
   }),
   link: css({
     color: Globals.colors.background,
-    display: 'block',
-    margin: '1em',
+    fontSize: 20,
+    borderRadius: 20,
+    padding: '10px 20px',
+    backgroundColor: Globals.colors.white,
+    display: 'inline-block',
+    margin: '0.5em',
     textDecoration: 'none',
   }),
 };

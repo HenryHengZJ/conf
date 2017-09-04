@@ -21,7 +21,6 @@ const styles = {
     background: Globals.colors.white,
     width: '100vw',
     alignItems: 'center',
-    paddingTop: 20,
     '@media(max-width: 720px)': {
       alignSelf: 'auto',
     },
@@ -58,31 +57,58 @@ const styles = {
   }),
 };
 
-const Sponsors = [
+const Supporters = [
   {
-    id: 3,
-    name: 'Taller',
-    avatar: tallerImg,
+    id: 1,
+    name: 'meteor',
+    avatar: meteorImg,
   },
   {
-    id: 4,
-    name: 'Quanto',
-    avatar: quantoImg,
+    id: 2,
+    name: 'apollo',
+    avatar: apolloImg,
   },
   {
-    id: 5,
-    name: 'Fullcircle',
-    avatar: fullcircleImg,
+    id: 8,
+
+    name: 'dne',
+    avatar: dneImg,
+  },
+  {
+    id: 9,
+    name: 'stq',
+    avatar: stqImg,
+  },
+  {
+    id: 10,
+    name: 'codamos',
+    avatar: codamosImg,
+  },
+  {
+    id: 6,
+    name: 'rivendel',
+    avatar: rivendelImg,
+  },
+  {
+    id: 7,
+
+    name: 'greenmile',
+    avatar: greenmileImg,
+  },
+  {
+    id: 11,
+    name: 'jsladies',
+    avatar: jsladiesImg,
   },
 ];
 
-class TextSponsor extends PureComponent {
+class TextSupporters extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="Patrocinadores" reverse />
+        <Text title="Apoio" reverse />
         <div {...styles.cards}>
-          {Sponsors.map(sponsor => {
+          {Supporters.map(sponsor => {
             return (
               <div key={sponsor.id} {...styles.card}>
                 <img src={sponsor.avatar} />
@@ -95,4 +121,4 @@ class TextSponsor extends PureComponent {
   }
 }
 
-export default TextSponsor;
+export default TextSupporters;

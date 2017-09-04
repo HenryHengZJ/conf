@@ -20,21 +20,18 @@ const styles = {
     padding: '20px 0',
     width: '80%',
     maxWidth: 400,
+    fontSize: 24,
+    display: 'inline-block',
+    fontWeight: 'lighter',
     margin: '0 auto 2em auto',
-    display: 'block',
     background: Globals.colors.main,
     cursor: 'pointer',
+    borderRadius: 40,
     textDecoration: 'none',
     letterSpacing: '1.5px',
-    // fontSize: '22px',
-
     ':hover': {
-      backgroundColor: Globals.colors.lighMain,
-      // border: '1px solid',
-      // borderColor: Globals.colors.primary,
-      // color: Globals.colors.primary,
+      backgroundColor: Globals.colors.white,
     },
-
     '@media(max-width: 720px)': {
       display: 'block',
       textAlign: 'center',
@@ -46,8 +43,7 @@ class TextBuyIngressos extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="Ingressos">
-          <p>All ingressos available only at Sympla:</p>
+        <Text title="07 Outubro 2017" subtitle="Sábado, das 8h às 18h">
           <br />
           <a
             href="https://www.sympla.com.br/react-conf-brasil-2017__161239"
@@ -55,7 +51,7 @@ class TextBuyIngressos extends PureComponent {
             rel="noopener noreferrer"
             {...styles.link}
           >
-            <b>Comprar ingressos</b>
+            Ingressos Disponíveis
           </a>
         </Text>
       </div>

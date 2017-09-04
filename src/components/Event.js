@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import { css } from 'glamor';
-
 import Globals from '../utils/Globals';
 import imgEvent from '../media/images/reactconfbr-event.jpg';
 
@@ -12,27 +11,35 @@ const styles = {
     background: Globals.colors.white,
     width: '100vw',
     display: 'flex',
-    '@media(max-width: 720px)': {
+    '@media(max-width: 1224px)': {
       alignSelf: 'auto',
     },
   }),
   imgContainer: css({
     width: '100%',
+    '@media(min-width: 1224px)': {
+      width: '50%',
+      display: 'flex ',
+      float: 'left',
+      padding: '1em',
+      margin: '3em 0 3em 0',
+      border: '1px solid lightgray',
+    },
     '> img': {
       maxWidth: '100%',
       margin: '0 auto',
     },
     display: 'flex ',
     margin: '0 auto',
-    // float: 'left',
-    // padding: '0',
-    // margin: '0',
-    // border: '1px solid lightgray',
   }),
   textContainer: css({
-    padding: '1em 0 1em 0',
-    width: '100%',
     display: 'flex',
+    '@media(min-width:1224px)': {
+      padding: '5em 3em',
+      display: 'flex',
+      lineHeight: 2,
+      textAlign: 'left',
+    },
   }),
 };
 
@@ -42,6 +49,7 @@ class TextPitch extends PureComponent {
       <div {...styles.container}>
         <Text title="O evento">
           <h3 lang="en">Bleending Edge Web Development</h3>
+          <div />
           <div {...styles.imgContainer}>
             <img src={imgEvent} />
           </div>

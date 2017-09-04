@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import { css } from 'glamor';
 
 import Globals from '../utils/Globals';
-// import imgAugusta from '../media/images/gallery1.jpg';
 import imgAugusta from '../media/images/theater-augusta.png';
 import Text from './Text';
 
