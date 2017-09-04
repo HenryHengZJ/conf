@@ -28,6 +28,7 @@ const styles = {
     '> img': {
       maxWidth: '100%',
       margin: '0 auto',
+      objectFit: 'cover',
     },
     display: 'flex ',
     margin: '0 auto',
