@@ -29,7 +29,7 @@ const styles = {
     marginLeft: 30,
   }),
   hr: css({
-    borderColor: Globals.colors.primary,
+    borderColor: Globals.colors.primaryLight,
   }),
   subtitle: css({
     color: Globals.colors.white,

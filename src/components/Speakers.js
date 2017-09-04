@@ -27,23 +27,18 @@ const styles = {
   }),
   name: css({
     fontSize: '1.999em',
-    // lineHeight: '2em',
     color: Globals.colors.primary,
-    // margin: 0,
     fontWeight: 'light',
     margin: '0.66em 0 0.15em 0',
     lineHeight: 1,
-    // padding: '20px 0px',
   }),
   locale: css({
     fontSize: '1em',
     fontWeight: 'lighter',
     margin: '0 0 0.33em 0',
-    // marginBottom: '0.33em',
   }),
   theme: css({
     fontSize: '1.414em',
-    // margin: 0,
     color: Globals.colors.subheader,
     margin: '0 0 0.33em 0',
     fontWeight: 'lighter',
@@ -64,7 +59,6 @@ const styles = {
     width: '100%',
     margin: '0 auto',
     maxWidth: 1000,
-    // margin: '30px auto',
   }),
 };
 
