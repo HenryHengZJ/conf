@@ -35,7 +35,7 @@ const styles = {
     backgroundColor: Globals.colors.white,
     borderRadius: 0,
     margin: 10,
-    '> img': {
+    '> a > img': {
       maxWidth: 150,
       maxHeight: 75,
       margin: '0 auto',
@@ -56,43 +56,51 @@ const styles = {
 const Supporters = [
   {
     id: 1,
-    name: 'meteor',
+    name: 'Meteor',
     avatar: meteorImg,
+    link: 'https://www.meteor.com/',
   },
   {
     id: 2,
-    name: 'apollo',
+    name: 'Apollo',
     avatar: apolloImg,
+    link: 'https://www.apollodata.com/',
   },
   {
     id: 8,
-    name: 'dne',
+    name: 'DevNaEstrada',
     avatar: dneImg,
+    link: 'http://devnaestrada.com.br/',
   },
   {
     id: 9,
-    name: 'stq',
+    name: 'stq advertising',
     avatar: stqImg,
+    link: 'https://stqpublicidade.com.br/',
   },
   {
     id: 10,
     name: 'codamos',
     avatar: codamosImg,
+    link: 'http://www.codamos.club/',
   },
   {
     id: 6,
     name: 'rivendel',
     avatar: rivendelImg,
+    link: 'https://rivendel.com.br/',
   },
   {
     id: 7,
     name: 'greenmile',
     avatar: greenmileImg,
+    link: 'http://greenmile.com/pt/greenmile/',
   },
   {
     id: 11,
     name: 'jsladies',
     avatar: jsladiesImg,
+    link: 'https://github.com/jsladiesbr',
   },
 ];
 
@@ -105,7 +113,9 @@ class TextSupporters extends PureComponent {
           {Supporters.map(sponsor => {
             return (
               <div key={sponsor.id} {...styles.card}>
-                <img src={sponsor.avatar} alt={sponsor.name} />
+                <a href={sponsor.link} title={sponsor.name} target="_blank">
+                  <img src={sponsor.avatar} alt={sponsor.name} />
+                </a>
               </div>
             );
           })}

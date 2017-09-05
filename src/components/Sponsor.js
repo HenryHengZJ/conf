@@ -32,7 +32,7 @@ const styles = {
     backgroundColor: Globals.colors.white,
     borderRadius: 0,
     margin: 10,
-    '> img': {
+    '> a > img': {
       maxWidth: 200,
       maxHeight: 100,
       margin: '0 auto',
@@ -55,16 +55,19 @@ const Sponsors = [
     id: 3,
     name: 'Taller',
     avatar: tallerImg,
+    link: 'https://taller.net.br',
   },
   {
     id: 5,
     name: 'Fullcircle',
     avatar: fullcircleImg,
+    link: 'http://fullcircle.com.br',
   },
   {
     id: 4,
     name: 'Quanto',
     avatar: quantoImg,
+    link: 'http://contaquanto.com.br',
   },
 ];
 
@@ -77,7 +80,9 @@ class TextSponsor extends PureComponent {
           {Sponsors.map(sponsor => {
             return (
               <div key={sponsor.id} {...styles.card}>
-                <img src={sponsor.avatar} alt={sponsor.name} />
+                <a href={sponsor.link} target="_blank">
+                  <img src={sponsor.avatar} alt={sponsor.name} />
+                </a>
               </div>
             );
           })}
