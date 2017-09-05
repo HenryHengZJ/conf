@@ -49,9 +49,9 @@ const styles = {
     padding: '0',
     backgroundColor: Globals.colors.white,
     borderRadius: 0,
-    margin: 20,
+    margin: '10px 10px 4em',
     '@media(min-width: 720px)': {
-      margin: 10,
+      margin: '10px 10px 1em',
     },
   }),
   cards: css({
