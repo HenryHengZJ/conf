@@ -30,7 +30,7 @@
   "private": false,
   "scripts": {
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
     "prettier": "./node_modules/.bin/prettier --write --single-quote true --trailing-comma all --print-width 80 --write 'src/**/*.js'",
