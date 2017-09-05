@@ -31,11 +31,20 @@ const styles = {
     fontWeight: 'light',
     margin: '0.66em 0 0.15em 0',
     lineHeight: 1,
+    '> a': {
+      textDecoration: 'none',
+      color: '#222',
+    },
   }),
   locale: css({
     fontSize: '1em',
     fontWeight: 'lighter',
     margin: '0 0 0.33em 0',
+    '> a': {
+      textDecoration: 'none',
+      color: '#555',
+      fontWeight: 'bold',
+    },
   }),
   theme: css({
     fontSize: '1.414em',
@@ -52,6 +61,11 @@ const styles = {
     margin: 20,
     '@media(min-width: 720px)': {
       margin: 10,
+    },
+    '> a': {
+      textIndent: '-9999px',
+      overflow: 'hidden',
+      textDecoration: 'none',
     },
   }),
   cards: css({
@@ -73,6 +87,8 @@ const Speakers = [
     origin: 'San Francisco, California, EUA',
     github: 'https://github.com/stubailo',
     avatar: stubailoImg,
+    worksIn: 'Meteor',
+    worksLink: 'https://www.meteor.io/',
   },
   {
     id: 8,
@@ -81,6 +97,8 @@ const Speakers = [
     origin: ' Anderson, South Carolina, EUA',
     github: 'https://github.com/jbaxleyiii',
     avatar: jbaxleyiiiImg,
+    worksIn: 'Apollo',
+    worksLink: 'https://www.apollodata.com/',
   },
   {
     id: 1,
@@ -89,6 +107,8 @@ const Speakers = [
     origin: 'São Paulo, Brasil',
     github: 'https://github.com/sibelius',
     avatar: sibeliusImg,
+    worksIn: 'Entria',
+    worksLink: 'https://www.entria.com.br/',
   },
   {
     id: 2,
@@ -97,6 +117,8 @@ const Speakers = [
     origin: 'São Paulo, Brasil',
     github: 'https://github.com/mtmr0x',
     avatar: marsiglioImg,
+    worksIn: 'Udacity',
+    worksLink: 'https://udacity.com/',
   },
   {
     id: 3,
@@ -105,6 +127,8 @@ const Speakers = [
     origin: 'Rio de Janeiro, Brasil',
     github: 'https://github.com/raphamorim',
     avatar: amorimImg,
+    worksIn: 'Globo.com',
+    worksLink: 'http://globo.com/',
   },
   {
     id: 4,
@@ -113,6 +137,8 @@ const Speakers = [
     origin: 'Curitiba, Brasil',
     github: 'https://github.com/fdaciuk',
     avatar: daciukImg,
+    worksIn: 'DA2K',
+    worksLink: 'http://da2k.com.br/',
   },
   {
     id: 5,
@@ -121,6 +147,8 @@ const Speakers = [
     origin: 'Ceara, Brasil',
     github: 'https://github.com/ketemartinsrufino',
     avatar: keteImg,
+    worksIn: 'GreenMile',
+    worksLink: 'http://greenmile.com/',
   },
   {
     id: 6,
@@ -129,6 +157,8 @@ const Speakers = [
     origin: 'Ceara, Brasil',
     github: 'https://github.com/cmilfont',
     avatar: milfontImg,
+    worksIn: 'Rivendel',
+    worksLink: 'https://rivendel.com.br/',
   },
 ];
 
@@ -141,18 +171,39 @@ class TextSpeakers extends PureComponent {
           {Speakers.map(speaker => {
             return (
               <div key={speaker.id} {...styles.card}>
-                <div
+                <a
+                  href={speaker.github}
+                  rel="noopener noreferrer"
+                  target="_blank"
                   {...css({
                     backgroundImage: `url('${speaker.avatar}')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     height: 300,
+                    display: 'block',
+                    borderRadius: '6px',
                   })}
-                />
-                <h3 {...styles.name}>
+                >
                   {speaker.name}
+                </a>
+                <h3 {...styles.name}>
+                  <a
+                    href={speaker.github}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {speaker.name}
+                  </a>
                 </h3>
                 <p {...styles.locale}>
+                  <a
+                    href={speaker.worksLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    @{speaker.worksIn}
+                  </a>
+                  {' / '}
                   {speaker.origin}
                 </p>
                 <h4 {...styles.theme}>
