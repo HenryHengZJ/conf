@@ -87,8 +87,8 @@ const Speakers = [
     origin: 'San Francisco, California, EUA',
     github: 'https://github.com/stubailo',
     avatar: stubailoImg,
-    worksIn: 'Meteor',
-    worksLink: 'https://www.meteor.io/',
+    worksIn: 'Apollo',
+    worksLink: 'https://www.apollodata.com/',
   },
   {
     id: 8,
