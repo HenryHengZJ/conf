@@ -17,8 +17,8 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
-    justifyContent: 'space-between',
     height: '100vh',
+    justifyContent: 'space-between',
   }),
 };
 
