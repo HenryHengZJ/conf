@@ -113,7 +113,12 @@ class TextSupporters extends PureComponent {
           {Supporters.map(sponsor => {
             return (
               <div key={sponsor.id} {...styles.card}>
-                <a href={sponsor.link} title={sponsor.name} target="_blank">
+                <a
+                  href={sponsor.link}
+                  title={sponsor.name}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <img src={sponsor.avatar} alt={sponsor.name} />
                 </a>
               </div>

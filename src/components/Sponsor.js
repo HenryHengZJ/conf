@@ -80,7 +80,11 @@ class TextSponsor extends PureComponent {
           {Sponsors.map(sponsor => {
             return (
               <div key={sponsor.id} {...styles.card}>
-                <a href={sponsor.link} target="_blank">
+                <a
+                  href={sponsor.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={sponsor.avatar} alt={sponsor.name} />
                 </a>
               </div>
