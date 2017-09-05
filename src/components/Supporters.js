@@ -114,7 +114,10 @@ class TextSupporters extends PureComponent {
             return (
               <div key={sponsor.id} {...styles.card}>
                 <a
-                  href={sponsor.link}
+                  href={
+                    sponsor.link +
+                    '?utm_source=reactconfbr-site&utm_medium=logo&utm_campaign=reactconfbr-2017'
+                  }
                   title={sponsor.name}
                   rel="noopener noreferrer"
                   target="_blank"
