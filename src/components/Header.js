@@ -18,6 +18,7 @@ const styles = {
     alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    height: '100vh',
   }),
 };
 
