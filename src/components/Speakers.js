@@ -76,7 +76,7 @@ const Speakers = [
   },
   {
     id: 8,
-    name: 'James Baxtley',
+    name: 'James Baxley',
     theme: 'Statically Typing your GraphQL App',
     origin: ' Anderson, South Carolina, EUA',
     github: 'https://github.com/jbaxleyiii',
