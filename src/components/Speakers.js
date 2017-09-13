@@ -79,7 +79,7 @@ const styles = {
   }),
 };
 
-const Speakers = [
+export const speakers = [
   {
     id: 7,
     name: 'Sashko Stubailo',
@@ -168,7 +168,7 @@ class TextSpeakers extends PureComponent {
       <div {...styles.container}>
         <Text title="Palestrantes" reverse />
         <div {...styles.cards}>
-          {Speakers.map(speaker => {
+          {speakers.map(speaker => {
             return (
               <div key={speaker.id} {...styles.card}>
                 <a
