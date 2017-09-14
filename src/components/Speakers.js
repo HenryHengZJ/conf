@@ -12,6 +12,9 @@ import marsiglioImg from '../media/images/speakers/marsiglio-pb.jpg';
 import amorimImg from '../media/images/speakers/amorim-pb.jpg';
 import keteImg from '../media/images/speakers/kete-pb.jpg';
 import milfontImg from '../media/images/speakers/milfont-pb.jpg';
+import sosaImg from '../media/images/speakers/sosa-pb.jpg';
+import raphaelImg from '../media/images/speakers/raphael-pb.jpg';
+import sebasImg from '../media/images/speakers/sebas-pb.jpg';
 
 const styles = {
   container: css({
@@ -160,6 +163,36 @@ const Speakers = [
     worksIn: 'Rivendel',
     worksLink: 'https://rivendel.com.br/',
   },
+  {
+    id: 9,
+    name: 'Raphael Costa',
+    theme: 'Building the Pipefy mobile app in 3 weeks',
+    origin: 'Curitiba, Brasil',
+    github: 'https://github.com/raphaelcosta',
+    avatar: raphaelImg,
+    worksIn: 'Pipefy',
+    worksLink: 'http://pipefy.com',
+  },
+  {
+    id: 10,
+    name: 'Sebastian Ferrari',
+    theme: 'Porque React es bueno para los negocios',
+    origin: 'Montevideo, Uruguai',
+    github: 'https://github.com/sebas5384',
+    avatar: sebasImg,
+    worksIn: 'Taller',
+    worksLink: 'http://taller.net.br',
+  },
+  {
+    id: 11,
+    name: 'Henrique Sosa',
+    theme: 'Gorgeous Apps with React Motion and Animations',
+    origin: 'São Paulo, Brasil',
+    github: 'https://github.com/henriquesosa',
+    avatar: sosaImg,
+    worksIn: 'Hi Platform',
+    worksLink: 'https://www.hiplatform.com',
+  },
 ];
 
 class TextSpeakers extends PureComponent {
@@ -206,9 +239,7 @@ class TextSpeakers extends PureComponent {
                   {' / '}
                   {speaker.origin}
                 </p>
-                <h4 {...styles.theme}>
-                  {speaker.theme}
-                </h4>
+                <h4 {...styles.theme}>{speaker.theme}</h4>
               </div>
             );
           })}
