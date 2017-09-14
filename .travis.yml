@@ -3,22 +3,17 @@
 # with pre installed yarn v0.17.8
 # https://github.com/facebookincubator/create-react-app/issues/3054
 # TODO: remove after Trusty environment is updated with a lastet version of yarn
-dist: precise
 language: node_js
 node_js:
-  - 6
-cache:
-  directories:
-  - node_modules
-  - packages/create-react-app/node_modules
-  - packages/react-scripts/node_modules
+ - "stable"
 install: true
 env:
   global:
     - USE_YARN=yes
-matrix:
-  include:
-      env: TEST_SUITE=simple
+script:
+  - yarn install
+  - yarn build
+  - yarn deploy
 # There's a weird Yarn/Lerna bug related to prerelease versions.
 # TODO: reenable after we ship 1.0.
 #    - node_js: 6
