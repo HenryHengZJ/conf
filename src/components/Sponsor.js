@@ -38,10 +38,12 @@ const styles = {
       '.pleno': {
         maxWidth: 300,
         maxHeight: 100,
+        paddingTop: 50,
       },
       '.junior': {
         maxWidth: 200,
         maxHeight: 100,
+        paddingTop: 30,
       },
       maxWidth: 150,
       maxHeight: 100,

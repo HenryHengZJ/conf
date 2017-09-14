@@ -6,12 +6,10 @@ import Text from './Text';
 
 import apolloImg from '../media/images/sponsors/apollo.jpg';
 import meteorImg from '../media/images/sponsors/meteor.jpg';
-import dneImg from '../media/images/sponsors/dne.jpg';
-import codamosImg from '../media/images/sponsors/codamos.jpg';
 import rivendelImg from '../media/images/sponsors/rivendel.jpg';
-import jsladiesImg from '../media/images/sponsors/jsladies.jpg';
 import stqImg from '../media/images/sponsors/stq.jpg';
 import greenmileImg from '../media/images/sponsors/greenmile.jpg';
+import luizaLabsImg from '../media/images/sponsors/luizaLabs.jpg';
 
 const styles = {
   container: css({
@@ -29,6 +27,9 @@ const styles = {
     width: 200,
     height: 75,
     '@media(min-width: 721px)': {
+      '> .secondary': {
+        height: 100,
+      },
       height: 150,
     },
     padding: '0',
@@ -36,6 +37,10 @@ const styles = {
     borderRadius: 0,
     margin: 10,
     '> a > img': {
+      '.secondary': {
+        maxWidth: 120,
+        maxHeight: 60,
+      },
       maxWidth: 150,
       maxHeight: 75,
       margin: '0 auto',
@@ -68,22 +73,13 @@ const Supporters = [
   },
   {
     id: 8,
-    name: 'DevNaEstrada',
-    avatar: dneImg,
-    link: 'http://devnaestrada.com.br/',
+    name: 'Luiza Labs',
+    avatar: luizaLabsImg,
+    link: 'http://luizalabs.com',
   },
-  {
-    id: 9,
-    name: 'stq advertising',
-    avatar: stqImg,
-    link: 'https://stqpublicidade.com.br/',
-  },
-  {
-    id: 10,
-    name: 'codamos',
-    avatar: codamosImg,
-    link: 'http://www.codamos.club/',
-  },
+];
+
+const SecondarySupporters = [
   {
     id: 6,
     name: 'rivendel',
@@ -97,10 +93,10 @@ const Supporters = [
     link: 'http://greenmile.com/pt/greenmile/',
   },
   {
-    id: 11,
-    name: 'jsladies',
-    avatar: jsladiesImg,
-    link: 'https://github.com/jsladiesbr',
+    id: 9,
+    name: 'stq advertising',
+    avatar: stqImg,
+    link: 'https://stqpublicidade.com.br/',
   },
 ];
 
@@ -109,6 +105,7 @@ class TextSupporters extends PureComponent {
     return (
       <div {...styles.container}>
         <Text title="Apoio" reverse />
+
         <div {...styles.cards}>
           {Supporters.map(sponsor => {
             return (
@@ -123,6 +120,30 @@ class TextSupporters extends PureComponent {
                   target="_blank"
                 >
                   <img src={sponsor.avatar} alt={sponsor.name} />
+                </a>
+              </div>
+            );
+          })}
+        </div>
+
+        <div {...styles.cards}>
+          {SecondarySupporters.map(secondarySponsor => {
+            return (
+              <div key={secondarySponsor.id} {...styles.card}>
+                <a
+                  href={
+                    secondarySponsor.link +
+                    '?utm_source=reactconfbr-site&utm_medium=logo&utm_campaign=reactconfbr-2017'
+                  }
+                  title={secondarySponsor.name}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    src={secondarySponsor.avatar}
+                    alt={secondarySponsor.name}
+                    className="secondary"
+                  />
                 </a>
               </div>
             );
