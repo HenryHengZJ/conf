@@ -12,6 +12,7 @@ css.global('html, body', {
   margin: 0,
   fontFamily: 'Rajdhani, sans-serif',
   background: Globals.colors.transparent,
+  overflowX: 'hidden',
 });
 
 class App extends PureComponent {
