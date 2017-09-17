@@ -176,7 +176,7 @@ const Speakers = [
   {
     id: 10,
     name: 'Sebastian Ferrari',
-    theme: 'Porque React es bueno para los negocios',
+    theme: 'Why React is good for business',
     origin: 'Montevideo, Uruguai',
     github: 'https://github.com/sebas5384',
     avatar: sebasImg,
@@ -239,7 +239,9 @@ class TextSpeakers extends PureComponent {
                   {' / '}
                   {speaker.origin}
                 </p>
-                <h4 {...styles.theme}>{speaker.theme}</h4>
+                <h4 {...styles.theme}>
+                  {speaker.theme}
+                </h4>
               </div>
             );
           })}
