@@ -52,7 +52,7 @@ class Ingresso extends PureComponent {
           rel="noopener noreferrer"
           {...styles.link}
         >
-          <b>Ingressos</b>
+          <b>Ingressos Esgotados</b>
         </a>
       </div>
     );

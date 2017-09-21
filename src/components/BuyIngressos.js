@@ -42,7 +42,7 @@ class TextBuyIngressos extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="07 Outubro 2017" subtitle="Sábado, das 8h às 18h">
+        <Text title="07 Outubro 2017" subtitle="Sábado, das 9h às 18h">
           <br />
           <a
             href="https://www.sympla.com.br/react-conf-brasil-2017__161239"
@@ -50,7 +50,7 @@ class TextBuyIngressos extends PureComponent {
             rel="noopener noreferrer"
             {...styles.link}
           >
-            Ingressos Disponíveis
+            Ingressos Esgotados
           </a>
         </Text>
       </div>
