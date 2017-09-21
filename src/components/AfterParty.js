@@ -34,8 +34,8 @@ const styles = {
     color: '#666666',
   }),
   card: css({
-    width: 200,
-    height: 75,
+    width: 250,
+    height: 150,
     '@media(min-width: 721px)': {
       height: 100,
     },
@@ -44,8 +44,8 @@ const styles = {
     borderRadius: 0,
     margin: 10,
     '> a > img': {
-      maxWidth: 200,
-      maxHeight: 95,
+      maxWidth: 250,
+      maxHeight: 150,
       margin: '0 auto',
       display: 'block',
     },
@@ -57,7 +57,7 @@ const styles = {
     justifyContent: 'space-around',
     width: '100%',
     maxWidth: 1000,
-    margin: '30px auto',
+    margin: '80px auto',
   }),
 };
 
