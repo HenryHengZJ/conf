@@ -9,6 +9,7 @@ import stqImg from '../media/images/sponsors/stq.jpg';
 import greenmileImg from '../media/images/sponsors/greenmile.jpg';
 import luizaLabsImg from '../media/images/sponsors/luizaLabs.jpg';
 import concreteImg from '../media/images/sponsors/concrete.png';
+import rungImg from '../media/images/sponsors/rung.jpg';
 
 const styles = {
   container: css({
@@ -63,6 +64,12 @@ const Supporters = [
     name: 'Concrete',
     avatar: concreteImg,
     link: 'http://concrete.com.br',
+  },
+  {
+    id: 11,
+    name: 'Rung',
+    avatar: rungImg,
+    link: 'https://www.rung.com.br/',
   },
   {
     id: 8,
