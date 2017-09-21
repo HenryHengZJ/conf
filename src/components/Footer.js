@@ -70,7 +70,7 @@ class Footer extends PureComponent {
             <p>
               Branding:{' '}
               <a {...styles.link} href="https://informatica.sp.senai.br">
-                Escola SENAI Informática
+                SENAI
               </a>
             </p>
             <p>
@@ -83,8 +83,7 @@ class Footer extends PureComponent {
               </a>
             </p>
             <p>
-              React Confs no mundo:{' '}
-              <a
+              {' '}<a
                 {...styles.link}
                 href="https://facebook.github.io/react/community/conferences.html"
               >
