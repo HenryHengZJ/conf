@@ -4,12 +4,12 @@ import Globals from '../utils/Globals';
 
 import Text from './Text';
 
-import apolloImg from '../media/images/sponsors/apollo.jpg';
-import meteorImg from '../media/images/sponsors/meteor.jpg';
 import rivendelImg from '../media/images/sponsors/rivendel.jpg';
 import stqImg from '../media/images/sponsors/stq.jpg';
 import greenmileImg from '../media/images/sponsors/greenmile.jpg';
 import luizaLabsImg from '../media/images/sponsors/luizaLabs.jpg';
+import concreteImg from '../media/images/sponsors/concrete.png';
+import rungImg from '../media/images/sponsors/rung.jpg';
 
 const styles = {
   container: css({
@@ -60,16 +60,16 @@ const styles = {
 
 const Supporters = [
   {
-    id: 1,
-    name: 'Meteor',
-    avatar: meteorImg,
-    link: 'https://www.meteor.com/',
+    id: 10,
+    name: 'Concrete',
+    avatar: concreteImg,
+    link: 'http://concrete.com.br',
   },
   {
-    id: 2,
-    name: 'Apollo',
-    avatar: apolloImg,
-    link: 'https://www.apollodata.com/',
+    id: 11,
+    name: 'Rung',
+    avatar: rungImg,
+    link: 'https://www.rung.com.br/',
   },
   {
     id: 8,
@@ -82,19 +82,19 @@ const Supporters = [
 const SecondarySupporters = [
   {
     id: 6,
-    name: 'rivendel',
+    name: 'Rivendel',
     avatar: rivendelImg,
     link: 'https://rivendel.com.br/',
   },
   {
     id: 7,
-    name: 'greenmile',
+    name: 'Greenmile',
     avatar: greenmileImg,
     link: 'http://greenmile.com/pt/greenmile/',
   },
   {
     id: 9,
-    name: 'stq advertising',
+    name: 'Stq Advertising',
     avatar: stqImg,
     link: 'https://stqpublicidade.com.br/',
   },

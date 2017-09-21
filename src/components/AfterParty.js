@@ -4,11 +4,7 @@ import Globals from '../utils/Globals';
 
 import Text from './Text';
 
-import dneImg from '../media/images/sponsors/dne.jpg';
-import codamosImg from '../media/images/sponsors/codamos.jpg';
-import jsladiesImg from '../media/images/sponsors/jsladies.jpg';
-import nodebrImg from '../media/images/sponsors/nodebr.jpg';
-import trainingcenterImg from '../media/images/sponsors/trainingcenter.jpg';
+import englishthingImg from '../media/images/sponsors/englishthing.png';
 
 const styles = {
   container: css({
@@ -19,22 +15,37 @@ const styles = {
       alignSelf: 'auto',
     },
   }),
+  sponsorbtn: css({
+    color: Globals.colors.background,
+    fontSize: 20,
+    textAlign: 'center',
+    maxWidth: 200,
+    borderRadius: 20,
+    padding: '10px 20px',
+    backgroundColor: Globals.colors.main,
+    display: 'block',
+    margin: '4em auto',
+    textDecoration: 'none',
+  }),
+  paragraphAfterParty: css({
+    textAlign: 'center',
+  }),
   link: css({
     color: '#666666',
   }),
   card: css({
-    width: 150,
+    width: 200,
     height: 75,
     '@media(min-width: 721px)': {
-      height: 150,
+      height: 100,
     },
     padding: '0',
     backgroundColor: Globals.colors.white,
     borderRadius: 0,
     margin: 10,
     '> a > img': {
-      maxWidth: 120,
-      maxHeight: 55,
+      maxWidth: 200,
+      maxHeight: 95,
       margin: '0 auto',
       display: 'block',
     },
@@ -50,46 +61,22 @@ const styles = {
   }),
 };
 
-const Promotions = [
+const AfterParty = [
   {
     id: 8,
-    name: 'DevNaEstrada',
-    avatar: dneImg,
-    link: 'http://devnaestrada.com.br/',
-  },
-  {
-    id: 10,
-    name: 'codamos',
-    avatar: codamosImg,
-    link: 'http://www.codamos.club/',
-  },
-  {
-    id: 11,
-    name: 'jsladies',
-    avatar: jsladiesImg,
-    link: 'https://github.com/jsladiesbr',
-  },
-  {
-    id: 12,
-    name: 'NodeBR',
-    avatar: nodebrImg,
-    link: 'https://github.com/nodebr',
-  },
-  {
-    id: 13,
-    name: 'Training Center',
-    avatar: trainingcenterImg,
-    link: 'https://github.com/training-center',
+    name: 'An English Thing',
+    avatar: englishthingImg,
+    link: 'http://www.anenglishthing.com.br/',
   },
 ];
 
-class TextPromotions extends PureComponent {
+class TextAfterParty extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="Promoção" reverse />
+        <Text title="After Party por" reverse />
         <div {...styles.cards}>
-          {Promotions.map(promotion => {
+          {AfterParty.map(promotion => {
             return (
               <div key={promotion.id} {...styles.card}>
                 <a
@@ -107,9 +94,26 @@ class TextPromotions extends PureComponent {
             );
           })}
         </div>
+        <p {...styles.paragraphAfterParty}>
+          <b>Mono Club, Rua Augusta, 480</b>
+        </p>
+        <p {...styles.paragraphAfterParty}>
+          Festa fechada com DJ e Open Bar exclusivo para os participantes da
+          React Conf Brasil após o evento.
+        </p>
+        <p>
+          <a
+            {...styles.sponsorbtn}
+            href="mailto:reactconfbr@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Seja um patrocinador
+          </a>
+        </p>
       </div>
     );
   }
 }
 
-export default TextPromotions;
+export default TextAfterParty;
