@@ -43,9 +43,9 @@ const styles = {
   }),
 };
 
-const Title = () =>
+const Title = () => (
   <div {...styles.header}>
-    <h1 {...styles.title}>
+    <h1 {...styles.title} className="notranslate">
       React
       <span {...styles.titleSpan}>Conf</span>
     </h1>
@@ -53,6 +53,7 @@ const Title = () =>
     <span {...styles.subtitle}>
       {Globals.location.country} {Globals.date.year}
     </span>
-  </div>;
+  </div>
+);
 
 export default Title;
