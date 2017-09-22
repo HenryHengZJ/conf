@@ -160,7 +160,7 @@ const Speakers = [
   {
     id: 5,
     name: 'Kete Rufino',
-    theme: 'From a legacy front end to a React SPA',
+    theme: 'Transformando um legado front-end em uma SPA com React',
     origin: 'Fortaleza, Brasil',
     github: 'https://github.com/ketemartinsrufino',
     avatar: keteImg,
@@ -170,7 +170,7 @@ const Speakers = [
   {
     id: 6,
     name: 'Christiano Milfont',
-    theme: 'From a legacy front end to a React SPA',
+    theme: 'Transformando um legado front-end em uma SPA com React',
     origin: 'Fortaleza, Brasil',
     github: 'https://github.com/cmilfont',
     avatar: milfontImg,
@@ -220,7 +220,7 @@ const Speakers = [
   {
     id: 14,
     name: 'Keuller Magalhães',
-    theme: 'A confirmar',
+    theme: 'Performance',
     origin: 'Belém, Brasil',
     github: 'https://github.com/keuller',
     avatar: keullerImg,
@@ -230,7 +230,7 @@ const Speakers = [
   {
     id: 15,
     name: 'Marcelo Camargo',
-    theme: 'A confirmar',
+    theme: "Let's dive into Babel: How everything works",
     origin: 'Joinville, Brasil',
     github: 'https://github.com/haskellcamargo',
     avatar: haskellImg,
@@ -252,6 +252,7 @@ class TextSpeakers extends PureComponent {
                   href={speaker.github}
                   rel="noopener noreferrer"
                   target="_blank"
+                  className="notranslate"
                   {...css({
                     backgroundImage: `url('${speaker.avatar}')`,
                     backgroundSize: 'cover',
@@ -268,6 +269,7 @@ class TextSpeakers extends PureComponent {
                     href={speaker.github}
                     rel="noopener noreferrer"
                     target="_blank"
+                    className="notranslate"
                   >
                     {speaker.name}
                   </a>
@@ -277,13 +279,16 @@ class TextSpeakers extends PureComponent {
                     href={speaker.worksLink}
                     rel="noopener noreferrer"
                     target="_blank"
+                    className="notranslate"
                   >
                     @{speaker.worksIn}
                   </a>
                   {' / '}
                   {speaker.origin}
                 </p>
-                <h4 {...styles.theme}>{speaker.theme}</h4>
+                <h4 {...styles.theme} className="notranslate">
+                  {speaker.theme}
+                </h4>
               </div>
             );
           })}

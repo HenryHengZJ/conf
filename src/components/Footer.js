@@ -53,7 +53,9 @@ class Footer extends PureComponent {
     return (
       <div {...styles.container} {...styles.before}>
         <div {...styles.wrapper}>
-          <Item title="#REACTCONFBR" subtitle="REACT BRASIL" />
+          <Item title="#REACTCONFBR" subtitle="REACT BRASIL">
+            <div id="google_translate_element" />
+          </Item>
           <Item title="COMPROMISSO">
             <p>
               <a
@@ -67,7 +69,7 @@ class Footer extends PureComponent {
             </p>
           </Item>
           <Item>
-            <p>
+            <p className="notranslate">
               Branding:{' '}
               <a {...styles.link} href="https://informatica.sp.senai.br">
                 SENAI
@@ -78,14 +80,17 @@ class Footer extends PureComponent {
               <a
                 {...styles.link}
                 href="https://github.com/facebookincubator/create-react-app/"
+                className="notranslate"
               >
                 create-react-app
               </a>
             </p>
             <p>
-              {' '}<a
+              {' '}
+              <a
                 {...styles.link}
                 href="https://facebook.github.io/react/community/conferences.html"
+                className="notranslate"
               >
                 Conferences React
               </a>

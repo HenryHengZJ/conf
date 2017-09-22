@@ -29,6 +29,9 @@ const styles = {
   }),
   paragraphAfterParty: css({
     textAlign: 'center',
+    ':first-letter': {
+      textTransform: 'uppercase',
+    },
   }),
   link: css({
     color: '#666666',
@@ -74,7 +77,7 @@ class TextAfterParty extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="After Party por" reverse />
+        <Text title="AfterParty por" reverse />
         <div {...styles.cards}>
           {AfterParty.map(promotion => {
             return (
