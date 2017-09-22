@@ -226,7 +226,10 @@ class TextContact extends PureComponent {
           </span>
 
           <p>
-            Envie sua Pull Request e ajude a manter esta página:<br />
+            Envie sua{' '}
+            <i lang="en" className="notranslate">
+              Pull Request
+            </i>. Ajude a manter esta página:<br />
             <a {...styles.link} href="https://github.com/react-brasil/conf">
               https://github.com/react-brasil/conf
             </a>

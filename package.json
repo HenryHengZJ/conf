@@ -2,6 +2,7 @@
   "name": "conf",
   "version": "1.0.5",
   "release": "0",
+  "license" : "SEE LICENSE IN LICENSE",
   "dependencies": {
     "enzyme": "^2.9.1",
     "gh-pages": "^1.0.0",
