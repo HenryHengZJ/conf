@@ -50,6 +50,8 @@ class Ingresso extends PureComponent {
     return (
       <div {...styles.container}>
         <a
+          href="https://www.sympla.com.br/react-conf-brasil-2017__161239"
+          target="_blank"
           className="is-disabled"
           rel="noopener noreferrer"
           {...styles.link}
