@@ -10,6 +10,7 @@ import greenmileImg from '../media/images/sponsors/greenmile.jpg';
 import luizaLabsImg from '../media/images/sponsors/luizaLabs.jpg';
 import concreteImg from '../media/images/sponsors/concrete.png';
 import rungImg from '../media/images/sponsors/rung.jpg';
+import movileImg from '../media/images/sponsors/movile.jpg';
 
 const styles = {
   container: css({
@@ -76,6 +77,12 @@ const Supporters = [
     name: 'Luiza Labs',
     avatar: luizaLabsImg,
     link: 'http://luizalabs.com',
+  },
+  {
+    id: 12,
+    name: 'Movile',
+    avatar: movileImg,
+    link: 'https://www.movile.com/',
   },
 ];
 
