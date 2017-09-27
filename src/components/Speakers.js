@@ -19,6 +19,7 @@ import claraImg from '../media/images/speakers/clara-pb.jpg';
 import matheuslimaImg from '../media/images/speakers/matheuslima-pb.jpg';
 import keullerImg from '../media/images/speakers/keuller-pb.jpg';
 import haskellImg from '../media/images/speakers/haskell-pb.jpg';
+import joaoGoncalvesImg from '../media/images/speakers/joaogoncalves-pb.jpg';
 
 const styles = {
   container: css({
@@ -236,6 +237,16 @@ const Speakers = [
     avatar: haskellImg,
     worksIn: 'Rung',
     worksLink: 'https://app.rung.com.br/',
+  },
+  {
+    id: 16,
+    name: 'João Gonçalves',
+    theme: 'Show do Milhão React PWA (Caso de Sucesso)',
+    origin: 'Campinas, Brasil',
+    github: '#',
+    avatar: joaoGoncalvesImg,
+    worksIn: 'Movile',
+    worksLink: 'https://www.movile.com/#/',
   },
 ];
 
