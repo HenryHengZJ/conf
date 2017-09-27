@@ -243,7 +243,7 @@ const Speakers = [
     name: 'João Gonçalves',
     theme: 'Show do Milhão React PWA (Caso de Sucesso)',
     origin: 'Campinas, Brasil',
-    github: '#',
+    github: 'https://github.com/joao-goncalves-movile',
     avatar: joaoGoncalvesImg,
     worksIn: 'Movile',
     worksLink: 'https://www.movile.com/#/',
