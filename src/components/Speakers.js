@@ -220,7 +220,7 @@ const Speakers = [
   {
     id: 14,
     name: 'Keuller Magalhães',
-    theme: 'Performance',
+    theme: 'React Performance from Scratch',
     origin: 'Belém, Brasil',
     github: 'https://github.com/keuller',
     avatar: keullerImg,
