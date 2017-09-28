@@ -72,7 +72,7 @@ const Plenos = [
     id: 1,
     name: 'Pipefy',
     avatar: pipefyImg,
-    link: 'https://pipefy.com',
+    link: 'https://www.pipefy.com',
   },
 ];
 
