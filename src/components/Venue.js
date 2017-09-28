@@ -21,12 +21,12 @@ const styles = {
   }),
   mediumBtn: css({
     color: Globals.colors.background,
-    fontSize: 20,
+    fontSize: 16,
     textAlign: 'center',
     maxWidth: 360,
     borderRadius: 20,
     padding: '10px 20px',
-    backgroundColor: Globals.colors.main,
+    backgroundColor: Globals.colors.white,
     display: 'block',
     margin: '0 auto',
     textDecoration: 'none',
@@ -38,9 +38,7 @@ class TextVenue extends PureComponent {
     return (
       <div {...styles.container}>
         <Text title="Local" subtitle="Teatro Augusta, São Paulo, Brasil">
-          <p>
-            {Globals.event.locale}
-          </p>
+          <p>{Globals.event.locale}</p>
           <p>
             <br />
             No coração de São Paulo, o histórico Teatro Augusta será o palco de
@@ -56,7 +54,7 @@ class TextVenue extends PureComponent {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Dicas de lazer e hospedagem em São Paulo
+              Hospedagem e Lazer em São Paulo
             </a>
           </p>
         </Text>
