@@ -16,7 +16,7 @@ const styles = {
   }),
   link: css({
     color: Globals.colors.background,
-    padding: '15px 50px',
+    padding: '12px 30px',
     background: Globals.colors.main,
     cursor: 'pointer',
     fontWeight: 'lighter',
@@ -24,7 +24,7 @@ const styles = {
     position: 'absolute',
     top: '35px',
     right: '30px',
-    fontSize: 20,
+    fontSize: 16,
     borderRadius: 40,
     ':not(.is-disabled):hover': {
       backgroundColor: Globals.colors.white,
