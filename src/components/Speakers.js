@@ -156,7 +156,7 @@ const Speakers = [
     github: 'https://github.com/raphaelcosta',
     avatar: raphaelImg,
     worksIn: 'Pipefy',
-    worksLink: 'http://pipefy.com',
+    worksLink: 'http://www.pipefy.com',
   },
   {
     id: 5,
