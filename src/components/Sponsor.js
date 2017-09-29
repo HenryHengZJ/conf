@@ -14,6 +14,7 @@ import meteorImg from '../media/images/sponsors/meteor.jpg';
 import cubosImg from '../media/images/sponsors/cubos.png';
 import udacityImg from '../media/images/sponsors/udacity.png';
 import entriaImg from '../media/images/sponsors/entria.png';
+import segwareImg from '../media/images/sponsors/segware.png';
 
 const styles = {
   container: css({
@@ -133,6 +134,12 @@ const Padawans = [
     name: 'Fullcircle',
     avatar: fullcircleImg,
     link: 'http://fullcircle.com.br',
+  },
+  {
+    id: 6,
+    name: 'Segware',
+    avatar: segwareImg,
+    link: 'http://www.segware.com.br/',
   },
 ];
 
