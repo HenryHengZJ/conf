@@ -10,6 +10,7 @@ import jsladiesImg from '../media/images/sponsors/jsladies.jpg';
 import nodebrImg from '../media/images/sponsors/nodebr.jpg';
 import trainingcenterImg from '../media/images/sponsors/trainingcenter.jpg';
 import braziljsImg from '../media/images/sponsors/braziljs.png';
+import infoqImg from '../media/images/sponsors/infoqbrasil.png';
 
 const styles = {
   container: css({
@@ -52,6 +53,12 @@ const styles = {
 };
 
 const Promotions = [
+  {
+    id: 15,
+    name: 'InfoQ Brasil',
+    avatar: infoqImg,
+    link: 'https://www.infoq.com/br',
+  },
   {
     id: 8,
     name: 'DevNaEstrada',
