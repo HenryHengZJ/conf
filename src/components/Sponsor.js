@@ -136,7 +136,7 @@ const Padawans = [
     link: 'http://fullcircle.com.br',
   },
   {
-    id: 6,
+    id: 9,
     name: 'Segware',
     avatar: segwareImg,
     link: 'http://www.segware.com.br/',
