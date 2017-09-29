@@ -9,6 +9,7 @@ import codamosImg from '../media/images/sponsors/codamos.jpg';
 import jsladiesImg from '../media/images/sponsors/jsladies.jpg';
 import nodebrImg from '../media/images/sponsors/nodebr.jpg';
 import trainingcenterImg from '../media/images/sponsors/trainingcenter.jpg';
+import braziljsImg from '../media/images/sponsors/braziljs.png';
 
 const styles = {
   container: css({
@@ -80,6 +81,12 @@ const Promotions = [
     name: 'Training Center',
     avatar: trainingcenterImg,
     link: 'https://github.com/training-center',
+  },
+  {
+    id: 14,
+    name: 'Brazil JS',
+    avatar: braziljsImg,
+    link: 'https://braziljs.org',
   },
 ];
 
