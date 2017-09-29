@@ -1,6 +1,6 @@
 {
   "name": "conf",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "release": "0",
   "license" : "SEE LICENSE IN LICENSE",
   "dependencies": {
