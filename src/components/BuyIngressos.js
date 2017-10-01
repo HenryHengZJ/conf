@@ -28,8 +28,13 @@ const styles = {
     cursor: 'pointer',
     borderRadius: 40,
     textDecoration: 'none',
-    ':hover': {
+    ':not(.is-disabled):hover': {
       backgroundColor: Globals.colors.white,
+    },
+    '&.is-disabled': {
+      backgroundColor: Globals.colors.gray,
+      color: Globals.colors.lightGray,
+      cursor: 'initial',
     },
     '@media(max-width: 720px)': {
       display: 'block',
@@ -42,15 +47,16 @@ class TextBuyIngressos extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="07 Outubro 2017" subtitle="Sábado, das 8h às 18h">
+        <Text title="07 Outubro 2017" subtitle="Sábado, das 9h às 18h">
           <br />
           <a
             href="https://www.sympla.com.br/react-conf-brasil-2017__161239"
             target="_blank"
+            className="is-disabled"
             rel="noopener noreferrer"
             {...styles.link}
           >
-            Ingressos Disponíveis
+            Ingressos Esgotados
           </a>
         </Text>
       </div>

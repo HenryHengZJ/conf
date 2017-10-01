@@ -12,6 +12,14 @@ import marsiglioImg from '../media/images/speakers/marsiglio-pb.jpg';
 import amorimImg from '../media/images/speakers/amorim-pb.jpg';
 import keteImg from '../media/images/speakers/kete-pb.jpg';
 import milfontImg from '../media/images/speakers/milfont-pb.jpg';
+import sosaImg from '../media/images/speakers/sosa-pb.jpg';
+import raphaelImg from '../media/images/speakers/raphael-pb.jpg';
+import sebasImg from '../media/images/speakers/sebas-pb.jpg';
+import claraImg from '../media/images/speakers/clara-pb.jpg';
+import matheuslimaImg from '../media/images/speakers/matheuslima-pb.jpg';
+import keullerImg from '../media/images/speakers/keuller-pb.jpg';
+import haskellImg from '../media/images/speakers/haskell-pb.jpg';
+import joaoGoncalvesImg from '../media/images/speakers/joaogoncalves-pb.jpg';
 
 const styles = {
   container: css({
@@ -84,7 +92,7 @@ export const speakers = [
     id: 7,
     name: 'Sashko Stubailo',
     theme: 'The GraphQL and Apollo stack: Connecting everything together',
-    origin: 'San Francisco, California, EUA',
+    origin: 'San Francisco, EUA',
     github: 'https://github.com/stubailo',
     avatar: stubailoImg,
     worksIn: 'Apollo',
@@ -94,7 +102,7 @@ export const speakers = [
     id: 8,
     name: 'James Baxley',
     theme: 'Statically Typing your GraphQL App',
-    origin: ' Anderson, South Carolina, EUA',
+    origin: ' Anderson, EUA',
     github: 'https://github.com/jbaxleyiii',
     avatar: jbaxleyiiiImg,
     worksIn: 'Apollo',
@@ -141,10 +149,20 @@ export const speakers = [
     worksLink: 'http://da2k.com.br/',
   },
   {
+    id: 9,
+    name: 'Raphael Costa',
+    theme: 'Building the Pipefy mobile app in 3 weeks',
+    origin: 'Curitiba, Brasil',
+    github: 'https://github.com/raphaelcosta',
+    avatar: raphaelImg,
+    worksIn: 'Pipefy',
+    worksLink: 'http://www.pipefy.com',
+  },
+  {
     id: 5,
     name: 'Kete Rufino',
-    theme: 'From a legacy front end to a React SPA',
-    origin: 'Ceara, Brasil',
+    theme: 'Transformando um legado front-end em uma SPA com React',
+    origin: 'Fortaleza, Brasil',
     github: 'https://github.com/ketemartinsrufino',
     avatar: keteImg,
     worksIn: 'GreenMile',
@@ -153,12 +171,82 @@ export const speakers = [
   {
     id: 6,
     name: 'Christiano Milfont',
-    theme: 'From a legacy front end to a React SPA',
-    origin: 'Ceara, Brasil',
+    theme: 'Transformando um legado front-end em uma SPA com React',
+    origin: 'Fortaleza, Brasil',
     github: 'https://github.com/cmilfont',
     avatar: milfontImg,
     worksIn: 'Rivendel',
     worksLink: 'https://rivendel.com.br/',
+  },
+  {
+    id: 10,
+    name: 'Sebastian Ferrari',
+    theme: 'Why React is good for business',
+    origin: 'Montevideo, Uruguai',
+    github: 'https://github.com/sebas5384',
+    avatar: sebasImg,
+    worksIn: 'Taller',
+    worksLink: 'http://taller.net.br',
+  },
+  {
+    id: 11,
+    name: 'Henrique Sosa',
+    theme: 'Gorgeous Apps with React Motion and Animations',
+    origin: 'São Paulo, Brasil',
+    github: 'https://github.com/henriquesosa',
+    avatar: sosaImg,
+    worksIn: 'Hi Platform',
+    worksLink: 'https://www.hiplatform.com',
+  },
+  {
+    id: 12,
+    name: 'Matheus Lima',
+    theme: 'O que tem de Funcional no React',
+    origin: 'Rio de Janeiro, Brasil',
+    github: 'https://github.com/matheusml',
+    avatar: matheuslimaImg,
+    worksIn: 'Concrete',
+    worksLink: 'http://concrete.com.br',
+  },
+  {
+    id: 13,
+    name: 'Clara Battesini',
+    theme: 'MobX: The light side of the force',
+    origin: 'Salvador, Brasil',
+    github: 'https://github.com/clarabatt',
+    avatar: claraImg,
+    worksIn: 'Cubos',
+    worksLink: 'http://cubos.io',
+  },
+  {
+    id: 14,
+    name: 'Keuller Magalhães',
+    theme: 'React Performance from Scratch',
+    origin: 'Belém, Brasil',
+    github: 'https://github.com/keuller',
+    avatar: keullerImg,
+    worksIn: 'PagSeguro',
+    worksLink: 'https://pagseguro.uol.com.br',
+  },
+  {
+    id: 15,
+    name: 'Marcelo Camargo',
+    theme: "Let's dive into Babel: How everything works",
+    origin: 'Joinville, Brasil',
+    github: 'https://github.com/haskellcamargo',
+    avatar: haskellImg,
+    worksIn: 'Rung',
+    worksLink: 'https://app.rung.com.br/',
+  },
+  {
+    id: 16,
+    name: 'João Gonçalves',
+    theme: 'Show do Milhão React PWA (Caso de Sucesso)',
+    origin: 'Campinas, Brasil',
+    github: 'https://github.com/joao-goncalves-movile',
+    avatar: joaoGoncalvesImg,
+    worksIn: 'Movile',
+    worksLink: 'https://www.movile.com/#/',
   },
 ];
 
@@ -175,6 +263,7 @@ class TextSpeakers extends PureComponent {
                   href={speaker.github}
                   rel="noopener noreferrer"
                   target="_blank"
+                  className="notranslate"
                   {...css({
                     backgroundImage: `url('${speaker.avatar}')`,
                     backgroundSize: 'cover',
@@ -191,6 +280,7 @@ class TextSpeakers extends PureComponent {
                     href={speaker.github}
                     rel="noopener noreferrer"
                     target="_blank"
+                    className="notranslate"
                   >
                     {speaker.name}
                   </a>
@@ -200,13 +290,14 @@ class TextSpeakers extends PureComponent {
                     href={speaker.worksLink}
                     rel="noopener noreferrer"
                     target="_blank"
+                    className="notranslate"
                   >
                     @{speaker.worksIn}
                   </a>
                   {' / '}
                   {speaker.origin}
                 </p>
-                <h4 {...styles.theme}>
+                <h4 {...styles.theme} className="notranslate">
                   {speaker.theme}
                 </h4>
               </div>

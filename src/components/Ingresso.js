@@ -16,7 +16,7 @@ const styles = {
   }),
   link: css({
     color: Globals.colors.background,
-    padding: '15px 50px',
+    padding: '12px 30px',
     background: Globals.colors.main,
     cursor: 'pointer',
     fontWeight: 'lighter',
@@ -24,13 +24,16 @@ const styles = {
     position: 'absolute',
     top: '35px',
     right: '30px',
-    fontSize: 20,
+    fontSize: 16,
     borderRadius: 40,
-
-    ':hover': {
+    ':not(.is-disabled):hover': {
       backgroundColor: Globals.colors.white,
     },
-
+    '&.is-disabled': {
+      backgroundColor: Globals.colors.gray,
+      color: Globals.colors.lightGray,
+      cursor: 'initial',
+    },
     '@media(max-width: 720px)': {
       display: 'block',
       textAlign: 'center',
@@ -49,10 +52,11 @@ class Ingresso extends PureComponent {
         <a
           href="https://www.sympla.com.br/react-conf-brasil-2017__161239"
           target="_blank"
+          className="is-disabled"
           rel="noopener noreferrer"
           {...styles.link}
         >
-          <b>Ingressos</b>
+          <b>Ingressos Esgotados</b>
         </a>
       </div>
     );
