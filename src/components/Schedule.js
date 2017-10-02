@@ -161,7 +161,7 @@ const eventsList = [
     time: '4:55 pm',
   },
   {
-    title: 'Desconferência: Open Spaces',
+    title: 'Desconferência: Fishbowl',
     time: '5:15 pm',
   },
   {
@@ -179,25 +179,33 @@ const eventsList = [
   },
 ];
 
-const Event = ({ title, time, worksIn = false, worksLink, description }) => (
+const Event = ({ title, time, worksIn = false, worksLink, description }) =>
   <li {...styles.event}>
-    <div {...styles.time}>{time}</div>
+    <div {...styles.time}>
+      {time}
+    </div>
     <div {...styles.desc}>
       <h2>
         {title}
-        {worksIn && <span>{worksIn}</span>}
+        {worksIn &&
+          <span>
+            {worksIn}
+          </span>}
       </h2>
-      {description && <h3>{description}</h3>}
+      {description &&
+        <h3>
+          {description}
+        </h3>}
     </div>
-  </li>
-);
+  </li>;
 
-const Schedule = ({ events = eventsList }) => (
+const Schedule = ({ events = eventsList }) =>
   <section {...styles.container}>
     <Text title="Programa" />
-    <ol {...styles.list}>{events.map(event => <Event {...event} />)}</ol>
+    <ol {...styles.list}>
+      {events.map(event => <Event {...event} />)}
+    </ol>
     <p {...styles.disclaimer}>Horário sujeito a alteração sem aviso prévio</p>
-  </section>
-);
+  </section>;
 
 export default Schedule;
