@@ -12,6 +12,7 @@ import trainingcenterImg from '../media/images/sponsors/trainingcenter.jpg';
 import braziljsImg from '../media/images/sponsors/braziljs.png';
 import infoqImg from '../media/images/sponsors/infoqbrasil.png';
 import tablelessImg from '../media/images/sponsors/tableless.png';
+import geekhunterImg from '../media/images/sponsors/geekhunter.jpg';
 
 const styles = {
   container: css({
@@ -101,6 +102,12 @@ const Promotions = [
     name: 'Tableless ',
     avatar: tablelessImg,
     link: 'https://tableless.com.br',
+  },
+  {
+    id: 17,
+    name: 'GeekHunter',
+    avatar: geekhunterImg,
+    link: 'https://geekhunter.com.br/',
   },
 ];
 

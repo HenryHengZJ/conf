@@ -3,6 +3,7 @@ import { css } from 'glamor';
 
 import Globals from '../utils/Globals';
 import imgAugusta from '../media/images/theater-augusta.png';
+import imgEvents from '../media/images/events.png';
 import Text from './Text';
 
 const styles = {
@@ -31,6 +32,9 @@ const styles = {
     margin: '0 auto',
     textDecoration: 'none',
   }),
+  evnts: css({
+    margin: '0 auto 20px auto',
+  }),
 };
 
 class TextVenue extends PureComponent {
@@ -50,11 +54,34 @@ class TextVenue extends PureComponent {
           <p>
             <a
               {...styles.mediumBtn}
+              href="https://goo.gl/maps/UUeBps9pRHT2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Maps
+            </a>
+          </p>
+          <p>
+            <a
+              {...styles.mediumBtn}
               href="https://medium.com/reactbrasil"
               target="_blank"
               rel="noopener noreferrer"
             >
               Hospedagem e Lazer em São Paulo
+            </a>
+          </p>
+          <p>
+            <h4>Economize na hospedagem</h4>
+            <img src={imgEvents} alt="Evnts" title="Evnts" {...styles.evnts} />
+            <a
+              {...styles.mediumBtn}
+              href="http://hoteis.evnts.com.br/sp/react-conf-brasil-2017"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Encontre os hotéis parceiros da React Conf Brasil 2017 com os
+              melhores valores e próximos ao local do evento
             </a>
           </p>
         </Text>
