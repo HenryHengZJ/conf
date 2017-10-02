@@ -1,7 +1,5 @@
 import React from 'react';
 import { css } from 'glamor';
-
-import { speakers as speakersList } from './Speakers';
 import Text from './Text';
 
 const styles = {
