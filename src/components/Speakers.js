@@ -20,6 +20,7 @@ import matheuslimaImg from '../media/images/speakers/matheuslima-pb.jpg';
 import keullerImg from '../media/images/speakers/keuller-pb.jpg';
 import haskellImg from '../media/images/speakers/haskell-pb.jpg';
 import joaoGoncalvesImg from '../media/images/speakers/joaogoncalves-pb.jpg';
+import geisyImg from '../media/images/speakers/geisy-pb.jpg';
 
 const styles = {
   container: css({
@@ -247,6 +248,16 @@ export const speakers = [
     avatar: joaoGoncalvesImg,
     worksIn: 'Movile',
     worksLink: 'https://www.movile.com/#/',
+  },
+  {
+    id: 17,
+    name: 'Geisy Domiciano',
+    theme: 'Continuous Integration/Continuous Deployment com create-react-app',
+    origin: 'Diadema, Brasil',
+    github: 'https://github.com/gdomiciano',
+    avatar: geisyImg,
+    worksIn: 'Polishop',
+    worksLink: 'http://www.polishop.com.br/',
   },
 ];
 

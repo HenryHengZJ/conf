@@ -11,6 +11,7 @@ import nodebrImg from '../media/images/sponsors/nodebr.jpg';
 import trainingcenterImg from '../media/images/sponsors/trainingcenter.jpg';
 import braziljsImg from '../media/images/sponsors/braziljs.png';
 import infoqImg from '../media/images/sponsors/infoqbrasil.png';
+import tablelessImg from '../media/images/sponsors/tableless.png';
 
 const styles = {
   container: css({
@@ -94,6 +95,12 @@ const Promotions = [
     name: 'Brazil JS',
     avatar: braziljsImg,
     link: 'https://braziljs.org',
+  },
+  {
+    id: 16,
+    name: 'Tableless ',
+    avatar: tablelessImg,
+    link: 'https://tableless.com.br',
   },
 ];
 

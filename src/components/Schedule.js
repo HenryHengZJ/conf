@@ -17,6 +17,14 @@ const styles = {
   list: css({
     listStyle: 'none',
     padding: 0,
+    maxWidth: '1000px',
+    margin: '0 auto',
+  }),
+  disclaimer: css({
+    padding: 0,
+    maxWidth: '1000px',
+    margin: '30px auto',
+    textAlign: 'right',
   }),
   event: css({
     display: 'flex',
@@ -76,8 +84,8 @@ const eventsList = [
     time: '10:10 am',
   },
   {
-    title: 'Geisy Domiciano',
-    description: 'Continuos Integration / Continuos Delivering',
+    title: 'Marcelo Camargo',
+    description: "Let's dive into Babel: How everything works",
     time: '10:35 am',
   },
   {
@@ -102,6 +110,11 @@ const eventsList = [
     title: 'Henrique Sosa',
     description: 'Gorgeous Apps with React Motion and Animations',
     time: '1:40 pm',
+  },
+  {
+    title: 'João Gonçalves',
+    description: 'Show do Milhão React PWA (Caso de Sucesso)',
+    time: '1:50 pm',
   },
   {
     title: 'Raphael Costa',
@@ -139,8 +152,9 @@ const eventsList = [
     time: '4:35 pm',
   },
   {
-    title: 'Marcelo Camargo',
-    description: "Let's dive into Babel: How everything works",
+    title: 'Geisy Domiciano',
+    description:
+      'Continuos Integration / Continuos Deployment com create-react-app',
     time: '4:45 pm',
   },
   {
@@ -167,32 +181,25 @@ const eventsList = [
   },
 ];
 
-const Event = ({ title, time, worksIn = false, worksLink, description }) =>
+const Event = ({ title, time, worksIn = false, worksLink, description }) => (
   <li {...styles.event}>
-    <div {...styles.time}>
-      {time}
-    </div>
+    <div {...styles.time}>{time}</div>
     <div {...styles.desc}>
       <h2>
         {title}
-        {worksIn &&
-          <span>
-            {worksIn}
-          </span>}
+        {worksIn && <span>{worksIn}</span>}
       </h2>
-      {description &&
-        <h3>
-          {description}
-        </h3>}
+      {description && <h3>{description}</h3>}
     </div>
-  </li>;
+  </li>
+);
 
-const Schedule = ({ events = eventsList }) =>
+const Schedule = ({ events = eventsList }) => (
   <section {...styles.container}>
     <Text title="Programa" />
-    <ol {...styles.list}>
-      {events.map(event => <Event {...event} />)}
-    </ol>
-  </section>;
+    <ol {...styles.list}>{events.map(event => <Event {...event} />)}</ol>
+    <p {...styles.disclaimer}>Horário sujeito a alteração sem aviso prévio</p>
+  </section>
+);
 
 export default Schedule;
