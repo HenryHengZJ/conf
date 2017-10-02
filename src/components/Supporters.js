@@ -11,6 +11,7 @@ import luizaLabsImg from '../media/images/sponsors/luizaLabs.jpg';
 import concreteImg from '../media/images/sponsors/concrete.png';
 import rungImg from '../media/images/sponsors/rung.jpg';
 import movileImg from '../media/images/sponsors/movile.jpg';
+import hiplatformImg from '../media/images/sponsors/hiplatform.png';
 
 const styles = {
   container: css({
@@ -104,6 +105,12 @@ const SecondarySupporters = [
     name: 'Stq Advertising',
     avatar: stqImg,
     link: 'https://stqpublicidade.com.br/',
+  },
+  {
+    id: 13,
+    name: 'Hi Platform',
+    avatar: hiplatformImg,
+    link: 'https://hiplatform.com/',
   },
 ];
 

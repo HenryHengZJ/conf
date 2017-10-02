@@ -5,6 +5,7 @@ import Globals from '../utils/Globals';
 import Event from './Event';
 import Venue from './Venue';
 import Speakers from './Speakers';
+import Schedule from './Schedule';
 import Sponsor from './Sponsor';
 import Supporters from './Supporters';
 import Promotions from './Promotions';
@@ -32,6 +33,7 @@ class App extends PureComponent {
         <Venue />
         <Speakers />
         <BuyIngressos />
+        <Schedule />
         <Sponsor />
         <Supporters />
         <Promotions />
