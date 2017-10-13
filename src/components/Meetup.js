@@ -87,6 +87,15 @@ class TextMeetup extends PureComponent {
           >
             Meetup Rio de Janeiro/RJ
           </a>
+
+          <a
+            {...styles.link}
+            href="https://www.meetup.com/React-Joinville/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meetup Joinville/SC
+          </a>
         </Text>
       </div>
     );
