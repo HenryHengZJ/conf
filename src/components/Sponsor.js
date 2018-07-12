@@ -68,7 +68,11 @@ const styles = {
   }),
 };
 
-const Plenos = [
+const Senior = [];
+
+const Plenos = [];
+
+const Plenos2017 = [
   {
     id: 1,
     name: 'Pipefy',
@@ -77,7 +81,9 @@ const Plenos = [
   },
 ];
 
-const Juniors = [
+const Juniors = [];
+
+const Juniors2017 = [
   {
     id: 2,
     name: 'Globo.com',
@@ -86,7 +92,9 @@ const Juniors = [
   },
 ];
 
-const Padawans = [
+const Padawans = [];
+
+const Padawans2017 = [
   {
     id: 1,
     name: 'Meteor',
@@ -147,7 +155,15 @@ class TextSponsor extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="Patrocínio" reverse />
+        {Senior &&
+          Senior.length &&
+          Plenos &&
+          Plenos.length &&
+          Juniors &&
+          Juniors.length &&
+          Padawans &&
+          Padawans.length &&
+          <Text title="Patrocínio" reverse />}
 
         <div {...styles.cards}>
           {Plenos.map(pleno => {

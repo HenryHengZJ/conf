@@ -47,7 +47,19 @@ class TextBuyIngressos extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="07 Outubro 2017" subtitle="Sábado, das 9h às 18h">
+        <Text title="20 Outubro 2018" subtitle="Sábado, das 9h às 18h">
+          <br />
+          <div className="is-disabled" {...styles.link}>
+            <b>Ingressos em breve</b>
+          </div>
+        </Text>
+      </div>
+    );
+  }
+  render2017() {
+    return (
+      <div {...styles.container}>
+        <Text title="20 Outubro 2018" subtitle="Sábado, das 9h às 18h">
           <br />
           <a
             href="https://www.sympla.com.br/react-conf-brasil-2017__161239"

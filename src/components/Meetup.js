@@ -33,23 +33,40 @@ class TextMeetup extends PureComponent {
       <div {...styles.container}>
         <Text title="Comunidade React Brasil">
           <br />
-
           <a
             {...styles.link}
-            href="http://www.meetup.com/ReactJS-SP/"
+            href="https://www.meetup.com/pt-BR/ReactJS-CWB/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Meetup São Paulo/SP
+            Meetup Curitiba/PR
           </a>
 
           <a
             {...styles.link}
-            href="https://www.meetup.com/React-Campinas"
+            href="https://www.meetup.com/pt-BR/React-Maringa/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Meetup Campinas/SP
+            Meetup Maringá/PR
+          </a>
+
+          <a
+            {...styles.link}
+            href="https://www.meetup.com/pt-BR/React-Rio-de-Janeiro/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meetup Rio de Janeiro/RJ
+          </a>
+
+          <a
+            {...styles.link}
+            href="https://www.meetup.com/React-Porto-Alegre/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meetup Porto Alegre/RS
           </a>
 
           <a
@@ -72,29 +89,29 @@ class TextMeetup extends PureComponent {
 
           <a
             {...styles.link}
-            href="https://www.meetup.com/ReactJS-CWB/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Meetup Curitiba/PR
-          </a>
-
-          <a
-            {...styles.link}
-            href="https://www.meetup.com/pt-BR/React-Rio-de-Janeiro/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Meetup Rio de Janeiro/RJ
-          </a>
-
-          <a
-            {...styles.link}
             href="https://www.meetup.com/React-Joinville/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Meetup Joinville/SC
+          </a>
+
+          <a
+            {...styles.link}
+            href="https://www.meetup.com/React-Campinas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meetup Campinas/SP
+          </a>
+
+          <a
+            {...styles.link}
+            href="http://www.meetup.com/ReactJS-SP/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meetup São Paulo/SP
           </a>
         </Text>
       </div>

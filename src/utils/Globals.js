@@ -7,8 +7,8 @@ const Globals = {
   },
 
   date: {
-    year: 2017,
-    full: '07 Outubro 2017',
+    year: 2018,
+    full: '20 Outubro 2018',
     hour: 'Sábado, das 8h às 18h',
   },
 
@@ -41,7 +41,9 @@ const Globals = {
   event: {
     title: 'COMUNIDADE REACT BRASIL',
     text:
-      'A primeira conferência do ecossistema React da América Latina. Como nas conferências dos Estados Unidos e Europa, queremos reunir desenvolvedores, empresas e estudantes de tecnologia para compartilhar experiências no desenvolvimento de aplicações reativas.',
+      'A maior conferência do ecossistema React da América Latina. Como nas conferências dos Estados Unidos e Europa, reunimos desenvolvedores, empresas e estudantes de tecnologia para compartilhar experiências no desenvolvimento de aplicações reativas.',
+    subtitle:
+      'React Native, GraphQL, Apollo, Jest, Reason, Docz, Redux, Relay, Flow, RxJS, Styled Components, Router, Navigation, Enzyme, Node, TypeScript, Deno, Webpack, Wasm, Prepack, Storybook, Reselect, Sagas, Thunk, Next, Logics, Immutable, React VR, MobX, Mocha, CSSModules, JSS, Actionz, Redux Form, Flux, Nightwatch, Mocha, Ramda, Glamorous, Reflux, Observable, Inferno, Lodash, Isomorphic, SSR, Babel, Leaflet',
   },
   topics: {
     title: 'O QUE QUEREMOS VER',

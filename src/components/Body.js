@@ -13,6 +13,7 @@ import BuyIngressos from './BuyIngressos';
 import Contact from './Contact';
 import Meetup from './Meetup';
 import AfterParty from './AfterParty';
+import BeSponsor from './BeSponsor';
 
 const styles = {
   container: css({
@@ -30,15 +31,16 @@ class App extends PureComponent {
     return (
       <div {...styles.container}>
         <Event />
-        <Venue />
-        <Speakers />
-        <BuyIngressos />
-        <Schedule />
+        {/*<Venue />*/}
+        {/*<Speakers />*/}
+        {/*<Schedule />*/}
         <Sponsor />
         <Supporters />
         <Promotions />
-        <AfterParty />
+        {/*<AfterParty />*/}
+        <BeSponsor />
         <Meetup />
+        <BuyIngressos />
         <Contact />
       </div>
     );

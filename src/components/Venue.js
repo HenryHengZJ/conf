@@ -41,12 +41,14 @@ class TextVenue extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="Local" subtitle="Teatro Augusta, São Paulo, Brasil">
-          <p>{Globals.event.locale}</p>
+        <Text title="Local" subtitle="Teatro Brigadeiro, São Paulo, Brasil">
+          <p>
+            {Globals.event.locale}
+          </p>
           <p>
             <br />
-            No coração de São Paulo, o histórico Teatro Augusta será o palco de
-            apresentações únicas.
+            No coração de São Paulo, o histórico Teatro Brigadeiro será o palco
+            de apresentações únicas.
           </p>
           <img src={imgAugusta} alt="Teatro Augusta" title="Teatro Augusta" />
           <small>Foto: Divulgação</small>
