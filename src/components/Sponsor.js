@@ -4,7 +4,7 @@ import Globals from '../utils/Globals';
 
 //import Text from './Text';
 
-import tallerImg from '../media/images/sponsors/taller.jpg';
+/*import tallerImg from '../media/images/sponsors/taller.jpg';
 import quantoImg from '../media/images/sponsors/quanto.jpg';
 import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
 import globoImg from '../media/images/sponsors/globo.jpg';
@@ -14,7 +14,7 @@ import meteorImg from '../media/images/sponsors/meteor.jpg';
 import cubosImg from '../media/images/sponsors/cubos.png';
 import udacityImg from '../media/images/sponsors/udacity.png';
 import entriaImg from '../media/images/sponsors/entria.png';
-import segwareImg from '../media/images/sponsors/segware.png';
+import segwareImg from '../media/images/sponsors/segware.png';*/
 
 const styles = {
   container: css({
