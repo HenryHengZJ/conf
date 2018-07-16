@@ -155,7 +155,7 @@ class TextSponsor extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        {Senior &&
+        {/*Senior &&
           Senior.length &&
           Plenos &&
           Plenos.length &&
@@ -163,11 +163,10 @@ class TextSponsor extends PureComponent {
           Juniors.length &&
           Padawans &&
           Padawans.length &&
-          <Text title="Patrocínio" reverse />}
-
-        <div {...styles.cards}>
-          {Plenos.map(pleno => {
-            return (
+          <Text title="Patrocínio" reverse />*/}
+        {Plenos.map(pleno => {
+          return (
+            <div {...styles.cards}>
               <div key={pleno.id} {...styles.card}>
                 <a
                   href={
@@ -180,13 +179,13 @@ class TextSponsor extends PureComponent {
                   <img src={pleno.avatar} alt={pleno.name} className="pleno" />
                 </a>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
 
-        <div {...styles.cards}>
-          {Juniors.map(junior => {
-            return (
+        {Juniors.map(junior => {
+          return (
+            <div {...styles.cards}>
               <div key={junior.id} {...styles.card}>
                 <a
                   href={
@@ -203,13 +202,13 @@ class TextSponsor extends PureComponent {
                   />
                 </a>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
 
-        <div {...styles.cards}>
-          {Padawans.map(padawan => {
-            return (
+        {Padawans.map(padawan => {
+          return (
+            <div {...styles.cards}>
               <div key={padawan.id} {...styles.card}>
                 <a
                   href={
@@ -222,9 +221,9 @@ class TextSponsor extends PureComponent {
                   <img src={padawan.avatar} alt={padawan.name} />
                 </a>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
     );
   }
