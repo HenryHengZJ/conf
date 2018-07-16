@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { css } from 'glamor';
 import Globals from '../utils/Globals';
 
-import Text from './Text';
+//import Text from './Text';
 
 import tallerImg from '../media/images/sponsors/taller.jpg';
 import quantoImg from '../media/images/sponsors/quanto.jpg';
@@ -72,29 +72,29 @@ const Senior = [];
 
 const Plenos = [];
 
-const Plenos2017 = [
+/*const Plenos2017 = [
   {
     id: 1,
     name: 'Pipefy',
     avatar: pipefyImg,
     link: 'https://www.pipefy.com',
   },
-];
+];*/
 
 const Juniors = [];
 
-const Juniors2017 = [
+/*const Juniors2017 = [
   {
     id: 2,
     name: 'Globo.com',
     avatar: globoImg,
     link: 'http://www.globo.com',
   },
-];
+];*/
 
 const Padawans = [];
 
-const Padawans2017 = [
+/*const Padawans2017 = [
   {
     id: 1,
     name: 'Meteor',
@@ -149,7 +149,7 @@ const Padawans2017 = [
     avatar: segwareImg,
     link: 'http://www.segware.com.br/',
   },
-];
+];*/
 
 class TextSponsor extends PureComponent {
   render() {
