@@ -49,23 +49,13 @@ class Ingresso extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <div className="is-disabled" {...styles.link}>
-          <b>Ingressos em breve</b>
-        </div>
-      </div>
-    );
-  }
-  renderDisable() {
-    return (
-      <div {...styles.container}>
         <a
-          href="https://www.sympla.com.br/react-conf-brasil-2017__161239"
+          href="https://www.sympla.com.br/react-conf-brasil-2018__323007"
           target="_blank"
-          className="is-disabled"
           rel="noopener noreferrer"
           {...styles.link}
         >
-          <b>Ingressos Esgotados</b>
+          <b>1º LOTE R$ 140,00</b>
         </a>
       </div>
     );
