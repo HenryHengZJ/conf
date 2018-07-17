@@ -49,26 +49,13 @@ class TextBuyIngressos extends PureComponent {
       <div {...styles.container}>
         <Text title="20 Outubro 2018" subtitle="Sábado, das 9h às 18h">
           <br />
-          <div className="is-disabled" {...styles.link}>
-            <b>Ingressos em breve</b>
-          </div>
-        </Text>
-      </div>
-    );
-  }
-  render2017() {
-    return (
-      <div {...styles.container}>
-        <Text title="20 Outubro 2018" subtitle="Sábado, das 9h às 18h">
-          <br />
           <a
-            href="https://www.sympla.com.br/react-conf-brasil-2017__161239"
+            href="https://www.sympla.com.br/react-conf-brasil-2018__323007"
             target="_blank"
-            className="is-disabled"
             rel="noopener noreferrer"
             {...styles.link}
           >
-            Ingressos Esgotados
+            1º LOTE R$ 140,00
           </a>
         </Text>
       </div>
