@@ -100,6 +100,7 @@ class TextPitch extends PureComponent {
         </div>
 
         <iframe
+          title="Video React Conf Brasil 2017"
           {...styles.afterMovie}
           width="100%"
           height="100%"

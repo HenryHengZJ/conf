@@ -2,9 +2,9 @@ import React, { PureComponent } from 'react';
 import { css } from 'glamor';
 import Globals from '../utils/Globals';
 
-import Text from './Text';
+//import Text from './Text';
 
-import englishthingImg from '../media/images/sponsors/englishthing.png';
+//import englishthingImg from '../media/images/sponsors/englishthing.png';
 
 const styles = {
   container: css({
