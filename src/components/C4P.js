@@ -31,12 +31,13 @@ const styles = {
       backgroundColor: Globals.colors.background,
       border: '1px solid',
       borderColor: Globals.colors.primary,
-      color: Globals.colors.primary,
+      color: Globals.colors.lightGray,
     },
 
     '@media(max-width: 720px)': {
       display: 'block',
       textAlign: 'center',
+      fontSize: '20px',
     },
   }),
 };
@@ -48,12 +49,12 @@ class TextSC4P extends PureComponent {
         <Text title="CALL FOR PAPERS" subtitle="SEJA UM PALESTRANTE">
           <br />
           <a
-            href="https://www.papercall.io/reactconfbr"
+            href="https://www.papercall.io/reactconfbr2018"
             target="_blank"
             rel="noopener noreferrer"
             {...styles.link}
           >
-            <b>papercall.io/reactconfbr</b>
+            <b>papercall.io/reactconfbr2018</b>
           </a>
         </Text>
       </div>
