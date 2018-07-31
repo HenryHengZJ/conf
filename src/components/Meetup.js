@@ -35,6 +35,24 @@ class TextMeetup extends PureComponent {
           <br />
           <a
             {...styles.link}
+            href="https://www.facebook.com/reactssa/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meetup Salvador/BA
+          </a>
+
+          <a
+            {...styles.link}
+            href="https://www.meetup.com/reactbh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meetup Belo Horizonte/MG
+          </a>
+
+          <a
+            {...styles.link}
             href="https://www.meetup.com/pt-BR/ReactJS-CWB/"
             target="_blank"
             rel="noopener noreferrer"
@@ -112,15 +130,6 @@ class TextMeetup extends PureComponent {
             rel="noopener noreferrer"
           >
             Meetup São Paulo/SP
-          </a>
-
-          <a
-            {...styles.link}
-            href="https://www.facebook.com/reactssa/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Meetup Salvador/BA
           </a>
         </Text>
       </div>
