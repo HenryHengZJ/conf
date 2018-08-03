@@ -4,9 +4,9 @@ import Globals from '../utils/Globals';
 
 import Text from './Text';
 
-import dneImg from '../media/images/sponsors/dne.jpg';
+import dneImg from '../media/images/sponsors/dne.svg';
 import codamosImg from '../media/images/sponsors/codamos.jpg';
-import jsladiesImg from '../media/images/sponsors/jsladies.jpg';
+import jsladiesImg from '../media/images/sponsors/jsladies.png';
 import nodebrImg from '../media/images/sponsors/nodebr.jpg';
 import trainingcenterImg from '../media/images/sponsors/trainingcenter.jpg';
 import braziljsImg from '../media/images/sponsors/braziljs.png';
@@ -36,11 +36,15 @@ const styles = {
     backgroundColor: Globals.colors.white,
     borderRadius: 0,
     margin: 10,
+    position: 'relative',
     '> a > img': {
       maxWidth: 120,
       maxHeight: 55,
       margin: '0 auto',
-      display: 'block',
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
     },
   }),
   cards: css({

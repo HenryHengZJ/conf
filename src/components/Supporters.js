@@ -38,6 +38,7 @@ const styles = {
     backgroundColor: Globals.colors.white,
     borderRadius: 0,
     margin: 10,
+    position: 'relative',
     '> a > img': {
       '.secondary': {
         maxWidth: 120,
@@ -46,7 +47,10 @@ const styles = {
       maxWidth: 150,
       maxHeight: 75,
       margin: '0 auto',
-      display: 'block',
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
     },
   }),
   cards: css({
