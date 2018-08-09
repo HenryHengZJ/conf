@@ -163,7 +163,7 @@ class TextSponsor extends PureComponent {
             Padawans &&
             Padawans.length &&
             <Text title="Patrocínio" reverse />*/}
-          <div {...styles.cards}>
+          {/*  <div {...styles.cards}>
             {Plenos.map(pleno => {
               return (
                 <div key={pleno.id} {...styles.card}>
@@ -184,7 +184,7 @@ class TextSponsor extends PureComponent {
                 </div>
               );
             })}
-          </div>
+          </div>*/}
 
           <div {...styles.cards}>
             {Juniors.map(junior => {
@@ -209,7 +209,7 @@ class TextSponsor extends PureComponent {
             })}
           </div>
 
-          <div {...styles.cards}>
+          {/*<div {...styles.cards}>
             {Padawans.map(padawan => {
               return (
                 <div key={padawan.id} {...styles.card}>
@@ -226,7 +226,7 @@ class TextSponsor extends PureComponent {
                 </div>
               );
             })}
-          </div>
+          </div>*/}
         </div>
       );
     } else {
