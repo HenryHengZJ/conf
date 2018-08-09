@@ -68,7 +68,7 @@ const styles = {
   }),
 };
 
-const Senior = [];
+//const Senior = [];
 
 const Plenos = [];
 
