@@ -7,7 +7,7 @@ import Event from './Event';
 //import Speakers from './Speakers';
 //import Schedule from './Schedule';
 import TextSC4P from './C4P';
-import Sponsor from './Sponsor';
+import TextSponsor from './Sponsor';
 import Supporters from './Supporters';
 import Promotions from './Promotions';
 import BuyIngressos from './BuyIngressos';
@@ -36,7 +36,7 @@ class App extends PureComponent {
         {/*<Speakers />*/}
         {/*<Schedule />*/}
         <TextSC4P />
-        <Sponsor />
+        <TextSponsor />
         <Supporters />
         <Promotions />
         {/*<AfterParty />*/}
