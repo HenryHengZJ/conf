@@ -2,12 +2,12 @@ import React, { PureComponent } from 'react';
 import { css } from 'glamor';
 import Globals from '../utils/Globals';
 
-//import Text from './Text';
+import Text from './Text';
 
+import globoImg from '../media/images/sponsors/globo.jpg';
 /*import tallerImg from '../media/images/sponsors/taller.jpg';
 import quantoImg from '../media/images/sponsors/quanto.jpg';
 import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
-import globoImg from '../media/images/sponsors/globo.jpg';
 import pipefyImg from '../media/images/sponsors/pipefy.jpg';
 import apolloImg from '../media/images/sponsors/apollo.jpg';
 import meteorImg from '../media/images/sponsors/meteor.jpg';
@@ -81,16 +81,14 @@ const Plenos = [];
   },
 ];*/
 
-const Juniors = [];
-
-/*const Juniors2017 = [
+const Juniors = [
   {
     id: 2,
     name: 'Globo.com',
     avatar: globoImg,
     link: 'http://www.globo.com',
   },
-];*/
+];
 
 const Padawans = [];
 
@@ -153,14 +151,14 @@ const Padawans = [];
 
 class TextSponsor extends PureComponent {
   render() {
-    if (Plenos.length && Senior.length && Juniors.lenght && Padawans.length) {
+    if (Juniors.length) {
       return (
         <div {...styles.container}>
+          <Text title="Patrocínio" />
           {/*Senior &&
             Senior.length &&
             Plenos &&
             Plenos.length &&
-            Juniors &&
             Juniors.length &&
             Padawans &&
             Padawans.length &&
