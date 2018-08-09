@@ -70,7 +70,7 @@ const styles = {
 
 //const Senior = [];
 
-const Plenos = [];
+//const Plenos = [];
 
 /*const Plenos2017 = [
   {
@@ -90,7 +90,7 @@ const Juniors = [
   },
 ];
 
-const Padawans = [];
+//const Padawans = [];
 
 /*const Padawans2017 = [
   {
