@@ -55,7 +55,7 @@ class TextBuyIngressos extends PureComponent {
             rel="noopener noreferrer"
             {...styles.link}
           >
-            1º LOTE R$ 140,00
+            2º LOTE R$ 180,00
           </a>
         </Text>
       </div>
