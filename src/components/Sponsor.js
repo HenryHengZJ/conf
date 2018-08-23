@@ -5,10 +5,10 @@ import Globals from '../utils/Globals';
 import Text from './Text';
 
 import globoImg from '../media/images/sponsors/globo.jpg';
+import pipefyImg from '../media/images/sponsors/pipefy.jpg';
 /*import tallerImg from '../media/images/sponsors/taller.jpg';
 import quantoImg from '../media/images/sponsors/quanto.jpg';
 import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
-import pipefyImg from '../media/images/sponsors/pipefy.jpg';
 import apolloImg from '../media/images/sponsors/apollo.jpg';
 import meteorImg from '../media/images/sponsors/meteor.jpg';
 import cubosImg from '../media/images/sponsors/cubos.png';
@@ -72,21 +72,18 @@ const styles = {
 
 //const Plenos = [];
 
-/*const Plenos2017 = [
-  {
-    id: 1,
-    name: 'Pipefy',
-    avatar: pipefyImg,
-    link: 'https://www.pipefy.com',
-  },
-];*/
-
 const Juniors = [
   {
-    id: 2,
+    id: 1,
     name: 'Globo.com',
     avatar: globoImg,
     link: 'http://www.globo.com',
+  },
+  {
+    id: 2,
+    name: 'Pipefy',
+    avatar: pipefyImg,
+    link: 'https://www.pipefy.com',
   },
 ];
 
