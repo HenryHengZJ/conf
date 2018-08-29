@@ -12,6 +12,7 @@ import concreteImg from '../media/images/sponsors/concrete.png';
 import rungImg from '../media/images/sponsors/rung.jpg';
 import movileImg from '../media/images/sponsors/movile.jpg';
 import hiplatformImg from '../media/images/sponsors/hiplatform.png';
+import r7Img from '../media/images/sponsors/r7.png';
 
 const styles = {
   container: css({
@@ -66,6 +67,12 @@ const styles = {
 
 const Supporters = [
   {
+    id: 14,
+    name: 'R7.com',
+    avatar: r7Img,
+    link: 'https://r7.com/',
+  },
+  {
     id: 10,
     name: 'Concrete',
     avatar: concreteImg,
@@ -83,15 +90,15 @@ const Supporters = [
     avatar: luizaLabsImg,
     link: 'http://luizalabs.com',
   },
+];
+
+const SecondarySupporters = [
   {
     id: 12,
     name: 'Movile',
     avatar: movileImg,
     link: 'https://www.movile.com/',
   },
-];
-
-const SecondarySupporters = [
   {
     id: 6,
     name: 'Rivendel',
