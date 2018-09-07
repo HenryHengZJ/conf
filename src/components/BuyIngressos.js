@@ -17,7 +17,8 @@ const styles = {
   }),
   link: css({
     color: Globals.colors.background,
-    padding: '20px 0',
+    border: `1px solid ${Globals.colors.transparent}`,
+    padding: '10px 0',
     width: '80%',
     maxWidth: 400,
     fontSize: 22,
@@ -26,10 +27,12 @@ const styles = {
     margin: '0 auto 2em auto',
     background: Globals.colors.main,
     cursor: 'pointer',
-    borderRadius: 40,
+    borderRadius: 4,
     textDecoration: 'none',
     ':not(.is-disabled):hover': {
-      backgroundColor: Globals.colors.white,
+      backgroundColor: Globals.colors.transparent,
+      border: `1px solid ${Globals.colors.main}`,
+      color: Globals.colors.main,
     },
     '&.is-disabled': {
       backgroundColor: Globals.colors.gray,

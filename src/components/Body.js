@@ -4,8 +4,8 @@ import Globals from '../utils/Globals';
 
 import Event from './Event';
 //import Venue from './Venue';
-//import Speakers from './Speakers';
-//import Schedule from './Schedule';
+import Speakers from './Speakers';
+import Schedule from './Schedule';
 import TextSC4P from './C4P';
 import TextSponsor from './Sponsor';
 import Supporters from './Supporters';

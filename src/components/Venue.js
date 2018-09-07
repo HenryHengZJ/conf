@@ -25,7 +25,7 @@ const styles = {
     fontSize: 16,
     textAlign: 'center',
     maxWidth: 360,
-    borderRadius: 20,
+    borderRadius: 4,
     padding: '10px 20px',
     backgroundColor: Globals.colors.white,
     display: 'block',

@@ -6,7 +6,7 @@ import Globals from '../utils/Globals';
 const cont = css({
   textAlign: 'center',
   textTransform: 'uppercase',
-  borderRadius: 3,
+  borderRadius: 4,
   padding: '8px 40px',
   color: Globals.colors.darken,
   fontWeight: 'bold',

@@ -18,7 +18,8 @@ const styles = {
     color: Globals.colors.white,
     padding: '10px 22px',
     background: Globals.colors.primary,
-    borderRadius: '4px',
+    border: `1px solid ${Globals.colors.transparent}`,
+    borderRadius: 4,
     border: '1px solid',
     borderColor: 'transparent',
     cursor: 'pointer',
@@ -28,10 +29,9 @@ const styles = {
     fontSize: '22px',
 
     ':hover': {
-      backgroundColor: Globals.colors.background,
-      border: '1px solid',
-      borderColor: Globals.colors.primary,
-      color: Globals.colors.lightGray,
+      backgroundColor: Globals.colors.transparent,
+      border: `1px solid ${Globals.colors.primary}`,
+      color: Globals.colors.primary,
     },
 
     '@media(max-width: 720px)': {

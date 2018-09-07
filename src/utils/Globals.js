@@ -30,6 +30,7 @@ const Globals = {
     shout: 'rgb(255, 204, 0)',
     link: 'black',
     lightGray: '#cccccc',
+    backgroundHeader: '#080c27',
   },
 
   fonts: {},
