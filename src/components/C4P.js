@@ -17,22 +17,15 @@ const styles = {
   link: css({
     color: Globals.colors.white,
     padding: '10px 22px',
-    background: Globals.colors.primary,
+    background: Globals.colors.lighterGray,
     borderRadius: '4px',
     border: '1px solid',
     borderColor: 'transparent',
-    cursor: 'pointer',
+    cursor: 'default',
     textTransform: 'lowercase',
     textDecoration: 'none',
     letterSpacing: '1.5px',
     fontSize: '22px',
-
-    ':hover': {
-      backgroundColor: Globals.colors.background,
-      border: '1px solid',
-      borderColor: Globals.colors.primary,
-      color: Globals.colors.lightGray,
-    },
 
     '@media(max-width: 720px)': {
       display: 'block',
@@ -49,12 +42,11 @@ class TextSC4P extends PureComponent {
         <Text title="CALL FOR PAPERS" subtitle="SEJA UM PALESTRANTE">
           <br />
           <a
-            href="https://www.papercall.io/reactconfbr2018"
             target="_blank"
             rel="noopener noreferrer"
             {...styles.link}
           >
-            <b>papercall.io/reactconfbr2018</b>
+            <b>Encerrado</b>
           </a>
         </Text>
       </div>
