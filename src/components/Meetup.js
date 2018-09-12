@@ -16,14 +16,23 @@ const styles = {
     },
   }),
   link: css({
-    color: Globals.colors.background,
+    color: Globals.colors.main,
     fontSize: 20,
-    borderRadius: 20,
+    borderRadius: 4,
     padding: '10px 20px',
     backgroundColor: Globals.colors.white,
+    border: `1px solid ${Globals.colors.transparent}`,
     display: 'inline-block',
     margin: '0.5em',
     textDecoration: 'none',
+    ':hover': {
+      backgroundColor: Globals.colors.transparent,
+      border: `1px solid ${Globals.colors.white}`,
+      color: Globals.colors.white,
+    },
+    '@media(max-width: 720px)': {
+      minWidth: '80%',
+    },
   }),
 };
 
@@ -31,7 +40,7 @@ class TextMeetup extends PureComponent {
   render() {
     return (
       <div {...styles.container}>
-        <Text title="Comunidade React Brasil">
+        <Text title="Meetups no Brasil">
           <br />
           <a
             {...styles.link}
