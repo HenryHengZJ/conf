@@ -126,7 +126,7 @@ export const speakers = [
   {
     id: 11,
     name: 'Nicholas Eduardo',
-    theme: 'Como estalar projetos React com Monorepo',
+    theme: 'Como escalar projetos React com Monorepo',
     origin: 'Florianópolis, SC',
     ytURL: 'https://www.youtube.com/watch?v=fzvmz0aUw14',
     avatar: NicholasImg,
