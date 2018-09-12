@@ -97,8 +97,8 @@ export const speakers = [
     origin: 'Joinville, SC',
     ytURL: 'https://www.youtube.com/watch?v=8fUVjPiwMIA',
     avatar: LarissaImg,
-    worksIn: 'Rung',
-    worksLink: 'https://app.rung.com.br/',
+    worksIn: 'VanHack',
+    worksLink: 'http://www.vanhack.com/',
     github: 'https://github.com/larissathasdefar/',
   },
   {
