@@ -93,9 +93,6 @@ const Juniors = [
     avatar: pipefyImg,
     link: 'https://www.pipefy.com',
   },
-];
-
-const Padawans = [
   {
     id: 4,
     name: 'Quanto',
@@ -103,6 +100,8 @@ const Padawans = [
     link: 'http://contaquanto.com.br',
   },
 ];
+
+const Padawans = false;
 
 /*const Padawans2017 = [
   {
@@ -162,14 +161,6 @@ class TextSponsor extends PureComponent {
       return (
         <div {...styles.container}>
           <Text title="Patrocínio" />
-          {/*Senior &&
-            Senior.length &&
-            Plenos &&
-            Plenos.length &&
-            Juniors.length &&
-            Padawans &&
-            Padawans.length &&
-            <Text title="Patrocínio" reverse />*/}
           <div {...styles.cards}>
             {Plenos.map(pleno => {
               return (
@@ -215,25 +206,25 @@ class TextSponsor extends PureComponent {
               );
             })}
           </div>
-
-          <div {...styles.cards}>
-            {Padawans.map(padawan => {
-              return (
-                <div key={padawan.id} {...styles.card}>
-                  <a
-                    href={
-                      padawan.link +
-                      '?utm_source=reactconfbr-site&utm_medium=logo&utm_campaign=reactconfbr-2017'
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={padawan.avatar} alt={padawan.name} />
-                  </a>
-                </div>
-              );
-            })}
-          </div>
+          {Padawans &&
+            <div {...styles.cards}>
+              {Padawans.map(padawan => {
+                return (
+                  <div key={padawan.id} {...styles.card}>
+                    <a
+                      href={
+                        padawan.link +
+                        '?utm_source=reactconfbr-site&utm_medium=logo&utm_campaign=reactconfbr-2017'
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={padawan.avatar} alt={padawan.name} />
+                    </a>
+                  </div>
+                );
+              })}
+            </div>}
         </div>
       );
     } else {
