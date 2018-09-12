@@ -166,7 +166,12 @@ class TextSpeakers extends PureComponent {
                     },
                   })}
                 >
-                  <img src={ytIcon} height="80px" {...css({ opacity: 0.5 })} />
+                  <img
+                    alt="youtube"
+                    src={ytIcon}
+                    height="80px"
+                    {...css({ opacity: 0.5 })}
+                  />
                 </a>
                 <h3 {...styles.name}>
                   <a
