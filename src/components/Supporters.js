@@ -13,6 +13,8 @@ import rungImg from '../media/images/sponsors/rung.jpg';
 import movileImg from '../media/images/sponsors/movile.jpg';
 import hiplatformImg from '../media/images/sponsors/hiplatform.png';
 import r7Img from '../media/images/sponsors/r7.png';
+import ebanxLogo from '../media/images/sponsors/ebanxLogo.svg';
+import iClinicImg from '../media/images/sponsors/iclinic.png';
 
 const styles = {
   container: css({
@@ -73,11 +75,26 @@ const Supporters = [
     link: 'https://r7.com/',
   },
   {
+    id: 15,
+    name: 'Ebanx',
+    avatar: ebanxLogo,
+    link: 'https://www.ebanx.com/br/',
+  },
+  {
+    id: 16,
+    name: 'iClinic',
+    avatar: iClinicImg,
+    link: 'https://iclinic.com.br/',
+  },
+  {
     id: 10,
     name: 'Concrete',
     avatar: concreteImg,
     link: 'http://concrete.com.br',
   },
+];
+
+const SecondarySupporters = [
   {
     id: 11,
     name: 'Rung',
@@ -90,9 +107,6 @@ const Supporters = [
     avatar: luizaLabsImg,
     link: 'http://luizalabs.com',
   },
-];
-
-const SecondarySupporters = [
   {
     id: 12,
     name: 'Movile',

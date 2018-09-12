@@ -6,8 +6,9 @@ import Text from './Text';
 
 import globoImg from '../media/images/sponsors/globo.jpg';
 import pipefyImg from '../media/images/sponsors/pipefy.jpg';
-/*import tallerImg from '../media/images/sponsors/taller.jpg';
 import quantoImg from '../media/images/sponsors/quanto.jpg';
+import telnyxImg from '../media/images/sponsors/telnyx.svg';
+/*import tallerImg from '../media/images/sponsors/taller.jpg';
 import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
 import apolloImg from '../media/images/sponsors/apollo.jpg';
 import meteorImg from '../media/images/sponsors/meteor.jpg';
@@ -70,7 +71,14 @@ const styles = {
 
 //const Senior = [];
 
-//const Plenos = [];
+const Plenos = [
+  {
+    id: 5,
+    name: 'Telnyx',
+    avatar: telnyxImg,
+    link: 'https://telnyx.com/',
+  },
+];
 
 const Juniors = [
   {
@@ -87,7 +95,14 @@ const Juniors = [
   },
 ];
 
-//const Padawans = [];
+const Padawans = [
+  {
+    id: 4,
+    name: 'Quanto',
+    avatar: quantoImg,
+    link: 'http://contaquanto.com.br',
+  },
+];
 
 /*const Padawans2017 = [
   {
@@ -126,12 +141,7 @@ const Juniors = [
     avatar: entriaImg,
     link: 'http://entria.com.br',
   },
-  {
-    id: 4,
-    name: 'Quanto',
-    avatar: quantoImg,
-    link: 'http://contaquanto.com.br',
-  },
+  
   {
     id: 5,
     name: 'Fullcircle',
@@ -160,7 +170,7 @@ class TextSponsor extends PureComponent {
             Padawans &&
             Padawans.length &&
             <Text title="Patrocínio" reverse />*/}
-          {/*  <div {...styles.cards}>
+          <div {...styles.cards}>
             {Plenos.map(pleno => {
               return (
                 <div key={pleno.id} {...styles.card}>
@@ -181,7 +191,7 @@ class TextSponsor extends PureComponent {
                 </div>
               );
             })}
-          </div>*/}
+          </div>
 
           <div {...styles.cards}>
             {Juniors.map(junior => {
@@ -206,7 +216,7 @@ class TextSponsor extends PureComponent {
             })}
           </div>
 
-          {/*<div {...styles.cards}>
+          <div {...styles.cards}>
             {Padawans.map(padawan => {
               return (
                 <div key={padawan.id} {...styles.card}>
@@ -223,7 +233,7 @@ class TextSponsor extends PureComponent {
                 </div>
               );
             })}
-          </div>*/}
+          </div>
         </div>
       );
     } else {
