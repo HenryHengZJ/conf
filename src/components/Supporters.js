@@ -15,6 +15,7 @@ import hiplatformImg from '../media/images/sponsors/hiplatform.png';
 import r7Img from '../media/images/sponsors/r7.png';
 import ebanxLogo from '../media/images/sponsors/ebanxLogo.svg';
 import iClinicImg from '../media/images/sponsors/iclinic.png';
+import getninjasImg from '../media/images/sponsors/getninjas.svg';
 
 const styles = {
   container: css({
@@ -95,6 +96,12 @@ const Supporters = [
 ];
 
 const SecondarySupporters = [
+  {
+    id: 17,
+    name: 'GetNinjas',
+    avatar: getninjasImg,
+    link: 'https://www.getninjas.com.br/',
+  },
   {
     id: 11,
     name: 'Rung',
