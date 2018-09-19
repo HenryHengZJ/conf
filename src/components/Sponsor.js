@@ -8,6 +8,7 @@ import globoImg from '../media/images/sponsors/globo.jpg';
 import pipefyImg from '../media/images/sponsors/pipefy.jpg';
 import quantoImg from '../media/images/sponsors/quanto.jpg';
 import telnyxImg from '../media/images/sponsors/telnyx.svg';
+import maxmilhasImg from '../media/images/sponsors/maxmilhas.svg';
 /*import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
 import apolloImg from '../media/images/sponsors/apollo.jpg';
 import meteorImg from '../media/images/sponsors/meteor.jpg';
@@ -97,6 +98,12 @@ const Juniors = [
     name: 'Quanto',
     avatar: quantoImg,
     link: 'http://contaquanto.com.br',
+  },
+  {
+    id: 6,
+    name: 'MaxMilhas',
+    avatar: maxmilhasImg,
+    link: 'http://www.maxmilhas.com.br',
   },
 ];
 
