@@ -153,7 +153,7 @@ export const speakers = [
   {
     id: 13,
     name: 'Pedro Nauck',
-    theme: 'Tema: Docz: de 0 a 5.000 ⭐️ em 2 semanas',
+    theme: 'Docz: de 0 a 5.000 ⭐️ em 2 semanas',
     origin: 'Florianópolis, SC',
     github: 'https://github.com/pedronauck',
     avatar: PedroNauckImg,
