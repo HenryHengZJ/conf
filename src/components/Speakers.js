@@ -4,11 +4,14 @@ import Globals from '../utils/Globals';
 
 import Text from './Text';
 
-//import pedroNauckImg from '../media/images/speakers/pedroNauck.jpeg';
+import PedroNauckImg from '../media/images/speakers/pedroNauck.jpg';
 import LarissaImg from '../media/images/speakers/Larissa.jpg';
 import NicholasImg from '../media/images/speakers/Nicholas.jpg';
 import MariaImg from '../media/images/speakers/Maria.jpeg';
 import MarceloImg from '../media/images/speakers/Marcelo.jpeg';
+import BrunoDahoraImg from '../media/images/speakers/brunoDahora.jpg';
+import GuilhermeVarandasImg from '../media/images/speakers/guilhermeVarandas.jpg';
+import RaphaelPortoImg from '../media/images/speakers/raphaelPorto.jpg';
 import ytIcon from '../media/icons/ytIcon.png';
 
 const styles = {
@@ -80,16 +83,29 @@ const styles = {
 };
 
 export const speakers = [
-  // {
-  //   id: 7,
-  //   name: 'Pedro Nauck',
-  //   theme: '',
-  //   origin: 'Florianópolis, SC',
-  //   github: 'https://github.com/pedronauck',
-  //   avatar: pedroNauckImg,
-  //   worksIn: 'One Market',
-  //   worksLink: 'https://www.onemarket.com.br/',
-  // },
+  {
+    id: 6,
+    name: 'Bruno da Hora',
+    theme: 'Otimize seu bundle com Webpack 4 e Create React App',
+    origin: 'Curitiba, PR',
+    github: 'https://github.com/brunodahora',
+    avatar: BrunoDahoraImg,
+    worksIn: 'Pipefy',
+    worksLink: 'https://www.pipefy.com/',
+    ytURL: 'https://www.youtube.com/watch?v=Hg_e7LX3VZo',
+  },
+  {
+    id: 7,
+    name: 'Guilherme Varandas',
+    theme:
+      'React Native no Banco do Brasil: Como RN nós faz poupar 1500 horas por projeto',
+    origin: 'Brasília, DF',
+    github: '',
+    avatar: GuilhermeVarandasImg,
+    worksIn: 'Banco do Brasil',
+    worksLink: 'https://www.bb.com.br',
+    ytURL: 'https://www.youtube.com/watch?v=5KL-6FkJvMw',
+  },
   {
     id: 8,
     name: 'Larissa Farias',
@@ -124,7 +140,7 @@ export const speakers = [
     github: 'https://github.com/olarclara/',
   },
   {
-    id: 11,
+    id: 12,
     name: 'Nicholas Eduardo',
     theme: 'Como escalar projetos React com Monorepo',
     origin: 'Florianópolis, SC',
@@ -133,6 +149,28 @@ export const speakers = [
     worksIn: 'Dooile',
     worksLink: 'http://www.dooile.com/',
     github: 'https://github.com/nicholasess',
+  },
+  {
+    id: 13,
+    name: 'Pedro Nauck',
+    theme: 'Tema: Docz: de 0 a 5.000 ⭐️ em 2 semanas',
+    origin: 'Florianópolis, SC',
+    github: 'https://github.com/pedronauck',
+    avatar: PedroNauckImg,
+    worksIn: 'Docz',
+    worksLink: 'https://www.docz.site/',
+    ytURL: 'https://www.youtube.com/watch?v=NqcEZZqZ7xQ',
+  },
+  {
+    id: 14,
+    name: 'Rafael Porto',
+    theme: 'A Jornada do React Native na Globo.com',
+    origin: 'Rio de Janeiro, RJ',
+    github: '',
+    avatar: RaphaelPortoImg,
+    worksIn: 'Globo.com',
+    worksLink: 'https://www.globo.com/',
+    ytURL: 'https://www.youtube.com/watch?v=L16Wp-dS-HY',
   },
 ];
 
