@@ -100,7 +100,7 @@ export const speakers = [
     theme:
       'React Native no Banco do Brasil: Como RN nós faz poupar 1500 horas por projeto',
     origin: 'Brasília, DF',
-    github: '',
+    github: 'https://github.com/gvarandas',
     avatar: GuilhermeVarandasImg,
     worksIn: 'Banco do Brasil',
     worksLink: 'https://www.bb.com.br',
@@ -163,7 +163,7 @@ export const speakers = [
   },
   {
     id: 14,
-    name: 'Rafael Porto',
+    name: 'Raphael Porto',
     theme: 'A Jornada do React Native na Globo.com',
     origin: 'Rio de Janeiro, RJ',
     github: '',
