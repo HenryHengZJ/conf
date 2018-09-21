@@ -12,6 +12,7 @@ import MarceloImg from '../media/images/speakers/Marcelo.jpeg';
 import BrunoDahoraImg from '../media/images/speakers/brunoDahora.jpg';
 import GuilhermeVarandasImg from '../media/images/speakers/guilhermeVarandas.jpg';
 import RaphaelPortoImg from '../media/images/speakers/raphaelPorto.jpg';
+import RaphaelAmorimImg from '../media/images/speakers/raphaelAmorim.jpg';
 import ytIcon from '../media/icons/ytIcon.png';
 
 const styles = {
@@ -163,10 +164,21 @@ export const speakers = [
   },
   {
     id: 14,
+    name: 'Raphael Amorim',
+    theme: 'Escrevendo seu próprio React Render',
+    origin: 'Rio de Janeiro, RJ',
+    github: 'https://github.com/raphamorim',
+    avatar: RaphaelAmorimImg,
+    worksIn: 'GoDaddy',
+    worksLink: 'https://www.godaddy.com/',
+    ytURL: 'https://youtu.be/ADFHQ-I9Scg',
+  },
+  {
+    id: 15,
     name: 'Raphael Porto',
     theme: 'A Jornada do React Native na Globo.com',
     origin: 'Rio de Janeiro, RJ',
-    github: '',
+    github: 'https://github.com/raphaelpor',
     avatar: RaphaelPortoImg,
     worksIn: 'Globo.com',
     worksLink: 'https://www.globo.com/',
