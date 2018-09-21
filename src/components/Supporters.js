@@ -16,6 +16,7 @@ import r7Img from '../media/images/sponsors/r7.png';
 import ebanxLogo from '../media/images/sponsors/ebanxLogo.svg';
 import iClinicImg from '../media/images/sponsors/iclinic.png';
 import getninjasImg from '../media/images/sponsors/getninjas.svg';
+import udacityImg from '../media/images/sponsors/udacity.png';
 
 const styles = {
   container: css({
@@ -88,19 +89,25 @@ const Supporters = [
     link: 'https://iclinic.com.br/',
   },
   {
-    id: 10,
-    name: 'Concrete',
-    avatar: concreteImg,
-    link: 'http://concrete.com.br',
+    id: 17,
+    name: 'GetNinjas',
+    avatar: getninjasImg,
+    link: 'https://www.getninjas.com.br/',
   },
 ];
 
 const SecondarySupporters = [
   {
-    id: 17,
-    name: 'GetNinjas',
-    avatar: getninjasImg,
-    link: 'https://www.getninjas.com.br/',
+    id: 13,
+    name: 'Udacity',
+    avatar: udacityImg,
+    link: 'https://udacity.com/',
+  },
+  {
+    id: 10,
+    name: 'Concrete',
+    avatar: concreteImg,
+    link: 'http://concrete.com.br',
   },
   {
     id: 11,

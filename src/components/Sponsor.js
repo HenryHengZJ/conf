@@ -9,11 +9,11 @@ import pipefyImg from '../media/images/sponsors/pipefy.jpg';
 import quantoImg from '../media/images/sponsors/quanto.jpg';
 import telnyxImg from '../media/images/sponsors/telnyx.svg';
 import maxmilhasImg from '../media/images/sponsors/maxmilhas.svg';
+import vagasImg from '../media/images/sponsors/vagas.svg';
 /*import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
 import apolloImg from '../media/images/sponsors/apollo.jpg';
 import meteorImg from '../media/images/sponsors/meteor.jpg';
 import cubosImg from '../media/images/sponsors/cubos.png';
-import udacityImg from '../media/images/sponsors/udacity.png';
 import entriaImg from '../media/images/sponsors/entria.png';
 import segwareImg from '../media/images/sponsors/segware.png';*/
 
@@ -73,7 +73,7 @@ const styles = {
 
 const Plenos = [
   {
-    id: 5,
+    id: 1,
     name: 'Telnyx',
     avatar: telnyxImg,
     link: 'https://telnyx.com/',
@@ -82,84 +82,39 @@ const Plenos = [
 
 const Juniors = [
   {
+    id: 2,
+    name: 'MaxMilhas',
+    avatar: maxmilhasImg,
+    link: 'http://www.maxmilhas.com.br',
+  },
+  {
+    id: 3,
+    name: 'VAGAS.com.br',
+    avatar: vagasImg,
+    link: 'http://www.vagas.com.br',
+  },
+];
+
+const Padawans = [
+  {
     id: 1,
     name: 'Globo.com',
     avatar: globoImg,
     link: 'http://www.globo.com',
   },
   {
-    id: 2,
-    name: 'Pipefy',
-    avatar: pipefyImg,
-    link: 'https://www.pipefy.com',
-  },
-  {
-    id: 4,
+    id: 5,
     name: 'Quanto',
     avatar: quantoImg,
     link: 'http://contaquanto.com.br',
   },
   {
-    id: 6,
-    name: 'MaxMilhas',
-    avatar: maxmilhasImg,
-    link: 'http://www.maxmilhas.com.br',
+    id: 4,
+    name: 'Pipefy',
+    avatar: pipefyImg,
+    link: 'https://www.pipefy.com',
   },
 ];
-
-const Padawans = false;
-
-/*const Padawans2017 = [
-  {
-    id: 1,
-    name: 'Meteor',
-    avatar: meteorImg,
-    link: 'https://www.meteor.com/',
-  },
-  {
-    id: 2,
-    name: 'Apollo',
-    avatar: apolloImg,
-    link: 'https://www.apollodata.com/',
-  },
-  {
-    id: 3,
-    name: 'Taller',
-    avatar: tallerImg,
-    link: 'https://taller.net.br',
-  },
-  {
-    id: 6,
-    name: 'Cubos',
-    avatar: cubosImg,
-    link: 'http://cubos.io',
-  },
-  {
-    id: 7,
-    name: 'Udacity',
-    avatar: udacityImg,
-    link: 'https://br.udacity.com/',
-  },
-  {
-    id: 8,
-    name: 'Entria',
-    avatar: entriaImg,
-    link: 'http://entria.com.br',
-  },
-
-  {
-    id: 5,
-    name: 'Fullcircle',
-    avatar: fullcircleImg,
-    link: 'http://fullcircle.com.br',
-  },
-  {
-    id: 9,
-    name: 'Segware',
-    avatar: segwareImg,
-    link: 'http://www.segware.com.br/',
-  },
-];*/
 
 class TextSponsor extends PureComponent {
   render() {
