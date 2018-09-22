@@ -1,6 +1,6 @@
 {
-  "main.js": "static/js/main.32b52d97.js",
-  "main.js.map": "static/js/main.32b52d97.js.map",
+  "main.js": "static/js/main.753e7590.js",
+  "main.js.map": "static/js/main.753e7590.js.map",
   "static/media/Larissa.jpg": "static/media/Larissa.06b8acf3.jpg",
   "static/media/Marcelo.jpeg": "static/media/Marcelo.59e6a45b.jpeg",
   "static/media/Maria.jpeg": "static/media/Maria.c8fe41f0.jpeg",
@@ -32,7 +32,5 @@
   "static/media/rung.jpg": "static/media/rung.5f6883ec.jpg",
   "static/media/tableless.png": "static/media/tableless.a819444c.png",
   "static/media/telnyx.svg": "static/media/telnyx.adc10446.svg",
-  "static/media/trainingcenter.jpg": "static/media/trainingcenter.d503922a.jpg",
-  "static/media/udacity.png": "static/media/udacity.06b101d7.png",
-  "static/media/vagas.svg": "static/media/vagas.bbd7b51b.svg"
+  "static/media/trainingcenter.jpg": "static/media/trainingcenter.d503922a.jpg"
 }
