@@ -8,14 +8,7 @@ import globoImg from '../media/images/sponsors/globo.jpg';
 import pipefyImg from '../media/images/sponsors/pipefy.jpg';
 import quantoImg from '../media/images/sponsors/quanto.jpg';
 import telnyxImg from '../media/images/sponsors/telnyx.svg';
-import maxmilhasImg from '../media/images/sponsors/maxmilhas.svg';
-/*import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
-import apolloImg from '../media/images/sponsors/apollo.jpg';
-import meteorImg from '../media/images/sponsors/meteor.jpg';
-import cubosImg from '../media/images/sponsors/cubos.png';
-import udacityImg from '../media/images/sponsors/udacity.png';
-import entriaImg from '../media/images/sponsors/entria.png';
-import segwareImg from '../media/images/sponsors/segware.png';*/
+import maxmilhasImg from '../media/images/sponsors/maxmilhas.png';
 
 const styles = {
   container: css({
