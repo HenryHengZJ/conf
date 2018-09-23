@@ -15,6 +15,7 @@ import RaphaelPortoImg from '../media/images/speakers/raphaelPorto.jpg';
 import RaphaelAmorimImg from '../media/images/speakers/raphaelAmorim.jpg';
 import HugoBessaImg from '../media/images/speakers/hugoBessa.jpg';
 import GuilhermeJaburImg from '../media/images/speakers/guilhermeJabur.jpg';
+import LuizCamargoImg from '../media/images/speakers/luizCamargo.png';
 import ytIcon from '../media/icons/ytIcon.png';
 
 const styles = {
@@ -91,7 +92,7 @@ const styles = {
 
 export const speakers = [
   {
-    id: 9,
+    id: 1,
     name: 'Marcelo Camargo',
     theme: 'ReasonML levado a sério',
     origin: 'Joinville, SC',
@@ -102,7 +103,7 @@ export const speakers = [
     github: 'https://github.com/haskellcamargo',
   },
   {
-    id: 13,
+    id: 2,
     name: 'Pedro Nauck',
     theme: 'Docz: de 0 a 5.000 ⭐️ em 2 semanas',
     origin: 'Florianópolis, SC',
@@ -113,10 +114,10 @@ export const speakers = [
     ytURL: 'https://www.youtube.com/watch?v=NqcEZZqZ7xQ',
   },
   {
-    id: 7,
+    id: 3,
     name: 'Guilherme Varandas',
     theme:
-      'React Native no Banco do Brasil: Como RN nós faz poupar 1500 horas por projeto',
+      'React Native no Banco do Brasil: Como RN nos faz poupar 1500 horas por projeto',
     origin: 'Brasília, DF',
     github: 'https://github.com/gvarandas',
     avatar: GuilhermeVarandasImg,
@@ -125,7 +126,7 @@ export const speakers = [
     ytURL: 'https://www.youtube.com/watch?v=5KL-6FkJvMw',
   },
   {
-    id: 6,
+    id: 4,
     name: 'Bruno da Hora',
     theme: 'Otimize seu bundle com Webpack 4 e Create React App',
     origin: 'Curitiba, PR',
@@ -136,7 +137,7 @@ export const speakers = [
     ytURL: 'https://www.youtube.com/watch?v=Hg_e7LX3VZo',
   },
   {
-    id: 10,
+    id: 5,
     name: 'Maria Clara',
     theme: 'React nas trincheiras: Erros cometidos e lições aprendidas',
     origin: 'Maceió, AL',
@@ -147,7 +148,7 @@ export const speakers = [
     github: 'https://github.com/olarclara/',
   },
   {
-    id: 12,
+    id: 6,
     name: 'Nicholas Eduardo',
     theme: 'Como escalar projetos React com Monorepo',
     origin: 'Florianópolis, SC',
@@ -158,7 +159,7 @@ export const speakers = [
     github: 'https://github.com/nicholasess',
   },
   {
-    id: 8,
+    id: 7,
     name: 'Larissa Farias',
     theme: 'TypeScript vs Flow no segundo semestre de 2018',
     origin: 'Joinville, SC',
@@ -169,7 +170,7 @@ export const speakers = [
     github: 'https://github.com/larissathasdefar/',
   },
   {
-    id: 14,
+    id: 8,
     name: 'Raphael Amorim',
     theme: 'Escrevendo seu próprio React Render',
     origin: 'Rio de Janeiro, RJ',
@@ -180,7 +181,7 @@ export const speakers = [
     ytURL: 'https://youtu.be/ADFHQ-I9Scg',
   },
   {
-    id: 15,
+    id: 9,
     name: 'Raphael Porto',
     theme: 'A Jornada do React Native na Globo.com',
     origin: 'Rio de Janeiro, RJ',
@@ -191,26 +192,38 @@ export const speakers = [
     ytURL: 'https://www.youtube.com/watch?v=L16Wp-dS-HY',
   },
   {
-    id: 16,
+    id: 10,
     name: 'Hugo Bessa',
     theme: 'Mantendo WebApps em produção sem dor de cabeça',
     origin: 'Santos, SP',
-    github: 'https://twitter.com/hugobessaa',
+    github: 'https://github.com/hugobessaa',
     avatar: HugoBessaImg,
     worksIn: 'Telnyx',
     worksLink: 'https://www.telnyx.com/',
     ytURL: 'https://youtu.be/EMD6OEyySRQ',
   },
   {
-    id: 17,
+    id: 11,
     name: 'Guilherme Jabur',
-    theme: 'Animações com React-Native',
+    theme: 'Animações com React Native',
     origin: 'Florianópolis, SC',
-    github: 'https://twitter.com/jabur_guilherme',
+    github: 'https://github.com/jaburcodes',
     avatar: GuilhermeJaburImg,
     worksIn: '',
     worksLink: '',
     ytURL: 'https://youtu.be/kMaODEf4DVA',
+  },
+  {
+    id: 12,
+    name: 'Luiz Camargo',
+    theme:
+      'Uma experiência open-source com React Native, GraphQL e Relay Modern',
+    origin: 'São Paulo, SP',
+    github: 'https://github.com/lXSPandora',
+    avatar: LuizCamargoImg,
+    worksIn: 'Popstand',
+    worksLink: 'https://www.popstand.com',
+    ytURL: 'https://youtu.be/Zt6NDC5wdFo',
   },
 ];
 
