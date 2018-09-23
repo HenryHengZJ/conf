@@ -14,6 +14,7 @@ import GuilhermeVarandasImg from '../media/images/speakers/guilhermeVarandas.jpg
 import RaphaelPortoImg from '../media/images/speakers/raphaelPorto.jpg';
 import RaphaelAmorimImg from '../media/images/speakers/raphaelAmorim.jpg';
 import HugoBessaImg from '../media/images/speakers/hugoBessa.jpg';
+import GuilhermeJaburImg from '../media/images/speakers/guilhermeJabur.jpg';
 import ytIcon from '../media/icons/ytIcon.png';
 
 const styles = {
@@ -47,6 +48,10 @@ const styles = {
       textDecoration: 'none',
       color: '#555',
       fontWeight: 'bold',
+    },
+    '> a::after': {
+      fontWeight: 'lighter',
+      content: ' / ',
     },
   }),
   theme: css({
@@ -196,6 +201,17 @@ export const speakers = [
     worksLink: 'https://www.telnyx.com/',
     ytURL: 'https://youtu.be/EMD6OEyySRQ',
   },
+  {
+    id: 17,
+    name: 'Guilherme Jabur',
+    theme: 'Animações com React-Native',
+    origin: 'Florianópolis, SC',
+    github: 'https://twitter.com/jabur_guilherme',
+    avatar: GuilhermeJaburImg,
+    worksIn: '',
+    worksLink: '',
+    ytURL: 'https://youtu.be/kMaODEf4DVA',
+  },
 ];
 
 class TextSpeakers extends PureComponent {
@@ -246,15 +262,16 @@ class TextSpeakers extends PureComponent {
                   </a>
                 </h3>
                 <p {...styles.locale}>
-                  <a
-                    href={speaker.worksLink}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="notranslate"
-                  >
-                    @{speaker.worksIn}
-                  </a>
-                  {' / '}
+                  {speaker.worksIn &&
+                    speaker.worksIn.length &&
+                    <a
+                      href={speaker.worksLink}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="notranslate"
+                    >
+                      @{speaker.worksIn}
+                    </a>}
                   {speaker.origin}
                 </p>
                 <h4 {...styles.theme} className="notranslate">
