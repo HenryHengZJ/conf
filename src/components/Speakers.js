@@ -13,6 +13,7 @@ import BrunoDahoraImg from '../media/images/speakers/brunoDahora.jpg';
 import GuilhermeVarandasImg from '../media/images/speakers/guilhermeVarandas.jpg';
 import RaphaelPortoImg from '../media/images/speakers/raphaelPorto.jpg';
 import RaphaelAmorimImg from '../media/images/speakers/raphaelAmorim.jpg';
+import HugoBessaImg from '../media/images/speakers/hugoBessa.jpg';
 import ytIcon from '../media/icons/ytIcon.png';
 
 const styles = {
@@ -183,6 +184,17 @@ export const speakers = [
     worksIn: 'Globo.com',
     worksLink: 'https://www.globo.com/',
     ytURL: 'https://www.youtube.com/watch?v=L16Wp-dS-HY',
+  },
+  {
+    id: 16,
+    name: 'Hugo Bessa',
+    theme: 'Mantendo WebApps em produção sem dor de cabeça',
+    origin: 'Santos, SP',
+    github: 'https://twitter.com/hugobessaa',
+    avatar: HugoBessaImg,
+    worksIn: 'Telnyx',
+    worksLink: 'https://www.telnyx.com/',
+    ytURL: 'https://youtu.be/EMD6OEyySRQ',
   },
 ];
 
