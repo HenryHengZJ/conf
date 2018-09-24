@@ -10,6 +10,7 @@ import quantoImg from '../media/images/sponsors/quanto.jpg';
 import telnyxImg from '../media/images/sponsors/telnyx.svg';
 import maxmilhasImg from '../media/images/sponsors/maxmilhas.svg';
 import vagasImg from '../media/images/sponsors/vagas.svg';
+import moteefeImg from '../media/images/sponsors/moteefe.png';
 
 const styles = {
   container: css({
@@ -107,6 +108,12 @@ const Padawans = [
     name: 'Pipefy',
     avatar: pipefyImg,
     link: 'https://www.pipefy.com',
+  },
+  {
+    id: 6,
+    name: 'Moteefe',
+    avatar: moteefeImg,
+    link: 'https://www.moteefe.com',
   },
 ];
 
