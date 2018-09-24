@@ -58,7 +58,7 @@ class Ingresso extends PureComponent {
           rel="noopener noreferrer"
           {...styles.link}
         >
-          <b>2º LOTE R$ 180,00</b>
+          <b>3º LOTE R$ 290,00</b>
         </a>
       </div>
     );

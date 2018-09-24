@@ -4,6 +4,7 @@ import Globals from '../utils/Globals';
 
 import Text from './Text';
 
+import udacityLogo from '../media/images/sponsors/udacity.png';
 import rivendelImg from '../media/images/sponsors/rivendel.jpg';
 import stqImg from '../media/images/sponsors/stq.jpg';
 import greenmileImg from '../media/images/sponsors/greenmile.jpg';
@@ -71,6 +72,12 @@ const styles = {
 
 const Supporters = [
   {
+    id: 13,
+    name: 'UDACITY',
+    avatar: udacityLogo,
+    link: 'https://br.udacity.com/',
+  },
+  {
     id: 14,
     name: 'R7.com',
     avatar: r7Img,
@@ -97,12 +104,6 @@ const Supporters = [
 ];
 
 const SecondarySupporters = [
-  {
-    id: 13,
-    name: 'Udacity',
-    avatar: udacityImg,
-    link: 'https://udacity.com/',
-  },
   {
     id: 10,
     name: 'Concrete',

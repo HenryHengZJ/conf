@@ -72,16 +72,16 @@ const Promotions = [
     link: 'http://devnaestrada.com.br/',
   },
   {
-    id: 10,
-    name: 'codamos',
-    avatar: codamosImg,
-    link: 'http://www.codamos.club/',
-  },
-  {
     id: 11,
     name: 'jsladies',
     avatar: jsladiesImg,
     link: 'https://github.com/jsladiesbr',
+  },
+  {
+    id: 10,
+    name: 'codamos',
+    avatar: codamosImg,
+    link: 'http://www.codamos.club/',
   },
   {
     id: 12,

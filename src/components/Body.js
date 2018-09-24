@@ -37,10 +37,10 @@ class App extends PureComponent {
         {/*<Schedule />*/}
         <TextSC4P />
         <TextSponsor />
+        <BeSponsor />
         <Supporters />
         <Promotions />
         {/*<AfterParty />*/}
-        <BeSponsor />
         <Meetup />
         <BuyIngressos />
         <Contact />

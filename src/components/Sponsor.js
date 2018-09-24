@@ -10,12 +10,6 @@ import quantoImg from '../media/images/sponsors/quanto.jpg';
 import telnyxImg from '../media/images/sponsors/telnyx.svg';
 import maxmilhasImg from '../media/images/sponsors/maxmilhas.svg';
 import vagasImg from '../media/images/sponsors/vagas.svg';
-/*import fullcircleImg from '../media/images/sponsors/fullcircle.jpg';
-import apolloImg from '../media/images/sponsors/apollo.jpg';
-import meteorImg from '../media/images/sponsors/meteor.jpg';
-import cubosImg from '../media/images/sponsors/cubos.png';
-import entriaImg from '../media/images/sponsors/entria.png';
-import segwareImg from '../media/images/sponsors/segware.png';*/
 
 const styles = {
   container: css({
