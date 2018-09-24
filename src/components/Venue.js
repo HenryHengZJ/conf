@@ -2,8 +2,7 @@ import React, { PureComponent } from 'react';
 import { css } from 'glamor';
 
 import Globals from '../utils/Globals';
-import imgAugusta from '../media/images/theater-augusta.png';
-import imgEvents from '../media/images/events.png';
+import imgTheater from '../media/images/theater-brigadeiro.jpg';
 import Text from './Text';
 
 const styles = {
@@ -19,6 +18,9 @@ const styles = {
     '@media(max-width: 720px)': {
       alignSelf: 'auto',
     },
+  }),
+  small: css({
+    display: 'block',
   }),
   mediumBtn: css({
     color: Globals.colors.background,
@@ -43,47 +45,24 @@ class TextVenue extends PureComponent {
       <div {...styles.container}>
         <Text title="Local" subtitle="Teatro Brigadeiro, São Paulo, Brasil">
           <p>
-            {Globals.event.locale}
+            Uma das mais tradicionais casas de espetáculo de São Paulo será
+            palco da 2ª React Conf Brasil
           </p>
-          <p>
-            <br />
-            No coração de São Paulo, o histórico Teatro Brigadeiro será o palco
-            de apresentações únicas.
-          </p>
-          <img src={imgAugusta} alt="Teatro Augusta" title="Teatro Augusta" />
-          <small>Foto: Divulgação</small>
-          <p>Rua Augusta, 943 - Cerqueira César, São Paulo / SP - Brasil</p>
+          <img
+            src={imgTheater}
+            alt="Teatro Brigadeiro"
+            title="Teatro Brigadeiro"
+          />
+          <small {...styles.small}>Foto: Divulgação</small>
+          <p>Av. Brigadeiro Luís Antônio, 884 - Bela Vista, São Paulo - SP</p>
           <p>
             <a
               {...styles.mediumBtn}
-              href="https://goo.gl/maps/UUeBps9pRHT2"
+              href="https://goo.gl/maps/qmmiig1AYG92"
               target="_blank"
               rel="noopener noreferrer"
             >
               Google Maps
-            </a>
-          </p>
-          <p>
-            <a
-              {...styles.mediumBtn}
-              href="https://medium.com/reactbrasil"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Hospedagem e Lazer em São Paulo
-            </a>
-          </p>
-          <p>
-            <h4>Economize na hospedagem</h4>
-            <img src={imgEvents} alt="Evnts" title="Evnts" {...styles.evnts} />
-            <a
-              {...styles.mediumBtn}
-              href="http://hoteis.evnts.com.br/sp/react-conf-brasil-2017"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Encontre os hotéis parceiros da React Conf Brasil 2017 com os
-              melhores valores e próximos ao local do evento
             </a>
           </p>
         </Text>

@@ -3,7 +3,7 @@ import { css } from 'glamor';
 import Globals from '../utils/Globals';
 
 import Event from './Event';
-//import Venue from './Venue';
+import Venue from './Venue';
 import Speakers from './Speakers';
 //import Schedule from './Schedule';
 import TextSC4P from './C4P';
@@ -32,7 +32,7 @@ class App extends PureComponent {
     return (
       <div {...styles.container}>
         <Event />
-        {/*<Venue />*/}
+        <Venue />
         <Speakers />
         {/*<Schedule />*/}
         <TextSC4P />
