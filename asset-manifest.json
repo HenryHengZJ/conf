@@ -1,6 +1,6 @@
 {
-  "main.js": "static/js/main.1f571731.js",
-  "main.js.map": "static/js/main.1f571731.js.map",
+  "main.js": "static/js/main.dca7f14a.js",
+  "main.js.map": "static/js/main.dca7f14a.js.map",
   "static/media/Larissa.jpg": "static/media/Larissa.06b8acf3.jpg",
   "static/media/Marcelo.jpeg": "static/media/Marcelo.59e6a45b.jpeg",
   "static/media/Maria.jpeg": "static/media/Maria.c8fe41f0.jpeg",
@@ -22,7 +22,7 @@
   "static/media/luizCamargo.png": "static/media/luizCamargo.a4aad684.png",
   "static/media/luizaLabs.jpg": "static/media/luizaLabs.accfa85d.jpg",
   "static/media/macaco.jpg": "static/media/macaco.5ba1cbd2.jpg",
-  "static/media/maxmilhas.png": "static/media/maxmilhas.6d9c91a1.png",
+  "static/media/maxmilhas.svg": "static/media/maxmilhas.f557ab57.svg",
   "static/media/movile.jpg": "static/media/movile.cf1f9acb.jpg",
   "static/media/pedroNauck.jpg": "static/media/pedroNauck.0d8775b1.jpg",
   "static/media/pipefy.jpg": "static/media/pipefy.8617bfcc.jpg",
@@ -33,5 +33,6 @@
   "static/media/rivendel.jpg": "static/media/rivendel.3caf8de8.jpg",
   "static/media/rung.jpg": "static/media/rung.5f6883ec.jpg",
   "static/media/telnyx.svg": "static/media/telnyx.adc10446.svg",
-  "static/media/trainingcenter.jpg": "static/media/trainingcenter.d503922a.jpg"
+  "static/media/trainingcenter.jpg": "static/media/trainingcenter.d503922a.jpg",
+  "static/media/vagas.svg": "static/media/vagas.bbd7b51b.svg"
 }
