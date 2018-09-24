@@ -53,12 +53,12 @@ class Ingresso extends PureComponent {
     return (
       <div {...styles.container}>
         <a
-          href="https://www.sympla.com.br/react-conf-brasil-2018__324745"
+          href="https://goo.gl/forms/F9FV7LQ5LRT68Zom2"
           target="_blank"
           rel="noopener noreferrer"
           {...styles.link}
         >
-          <b>3º LOTE R$ 290,00</b>
+          <b>Lista de espera</b>
         </a>
       </div>
     );
