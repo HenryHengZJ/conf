@@ -11,6 +11,7 @@ import telnyxImg from '../media/images/sponsors/telnyx.svg';
 import maxmilhasImg from '../media/images/sponsors/maxmilhas.svg';
 import vagasImg from '../media/images/sponsors/vagas.svg';
 import moteefeImg from '../media/images/sponsors/moteefe.png';
+import daitanGroupImg from '../media/images/sponsors/daitanGroup.png';
 
 const styles = {
   container: css({
@@ -73,17 +74,23 @@ const Plenos = [
     avatar: telnyxImg,
     link: 'https://telnyx.com/',
   },
+  {
+    id: 2,
+    name: 'Daitan Group',
+    avatar: daitanGroupImg,
+    link: 'https://www.daitangroup.com/',
+  },
 ];
 
 const Juniors = [
   {
-    id: 2,
+    id: 3,
     name: 'MaxMilhas',
     avatar: maxmilhasImg,
     link: 'http://www.maxmilhas.com.br',
   },
   {
-    id: 3,
+    id: 4,
     name: 'VAGAS.com.br',
     avatar: vagasImg,
     link: 'http://www.vagas.com.br',
@@ -92,25 +99,25 @@ const Juniors = [
 
 const Padawans = [
   {
-    id: 1,
+    id: 5,
     name: 'Globo.com',
     avatar: globoImg,
     link: 'http://www.globo.com',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Quanto',
     avatar: quantoImg,
     link: 'http://contaquanto.com.br',
   },
   {
-    id: 4,
+    id: 7,
     name: 'Pipefy',
     avatar: pipefyImg,
     link: 'https://www.pipefy.com',
   },
   {
-    id: 6,
+    id: 8,
     name: 'Moteefe',
     avatar: moteefeImg,
     link: 'https://www.moteefe.com',
