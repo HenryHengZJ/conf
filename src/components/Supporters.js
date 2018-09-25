@@ -17,7 +17,6 @@ import r7Img from '../media/images/sponsors/r7.png';
 import ebanxLogo from '../media/images/sponsors/ebanxLogo.svg';
 import iClinicImg from '../media/images/sponsors/iclinic.png';
 import getninjasImg from '../media/images/sponsors/getninjas.svg';
-import udacityImg from '../media/images/sponsors/udacity.png';
 
 const styles = {
   container: css({

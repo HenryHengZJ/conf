@@ -53,7 +53,7 @@ class TextBuyIngressos extends PureComponent {
         <Text title="20 Outubro 2018" subtitle="Sábado, das 7h30 às 18h">
           <br />
           <a
-            href="#"
+            href=""
             target="_blank"
             className="is-disabled"
             rel="noopener noreferrer"
