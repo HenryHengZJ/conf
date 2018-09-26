@@ -16,6 +16,7 @@ import RaphaelAmorimImg from '../media/images/speakers/raphaelAmorim.jpg';
 import HugoBessaImg from '../media/images/speakers/hugoBessa.jpg';
 import GuilhermeJaburImg from '../media/images/speakers/guilhermeJabur.jpg';
 import LuizCamargoImg from '../media/images/speakers/luizCamargo.png';
+import mairaBelloImg from '../media/images/speakers/mairaBello.jpg';
 import ytIcon from '../media/icons/ytIcon.png';
 
 const styles = {
@@ -224,6 +225,17 @@ export const speakers = [
     worksIn: 'Popstand',
     worksLink: 'https://www.popstand.com',
     ytURL: 'https://youtu.be/Zt6NDC5wdFo',
+  },
+  {
+    id: 13,
+    name: 'Maira Bello',
+    theme: 'Escalando o GraphQL',
+    origin: 'Recife, PE',
+    github: 'https://github.com/mairatma',
+    avatar: mairaBelloImg,
+    worksIn: 'In Loco',
+    worksLink: 'https://www.inlocomedia.com',
+    ytURL: 'https://youtu.be/zQG2uL-KUtg',
   },
 ];
 
