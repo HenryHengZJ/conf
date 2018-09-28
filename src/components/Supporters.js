@@ -9,6 +9,7 @@ import r7Img from '../media/images/sponsors/r7.png';
 import ebanxLogo from '../media/images/sponsors/ebanxLogo.svg';
 import iClinicImg from '../media/images/sponsors/iclinic.png';
 import getninjasImg from '../media/images/sponsors/getninjas.svg';
+import rungImg from '../media/images/sponsors/rung.jpg';
 import tailImg from '../media/images/sponsors/tailLogo.svg';
 
 const styles = {
@@ -98,6 +99,12 @@ const Supporters = [
     name: 'Tail',
     avatar: tailImg,
     link: 'https://www.tail.digital/',
+  },
+  {
+    id: 19,
+    name: 'Rung',
+    avatar: rungImg,
+    link: 'https://www.rung.com.br/',
   },
 ];
 
