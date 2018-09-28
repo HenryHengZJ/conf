@@ -5,18 +5,11 @@ import Globals from '../utils/Globals';
 import Text from './Text';
 
 import udacityLogo from '../media/images/sponsors/udacity.png';
-import rivendelImg from '../media/images/sponsors/rivendel.jpg';
-import stqImg from '../media/images/sponsors/stq.jpg';
-import greenmileImg from '../media/images/sponsors/greenmile.jpg';
-import luizaLabsImg from '../media/images/sponsors/luizaLabs.jpg';
-import concreteImg from '../media/images/sponsors/concrete.png';
-import rungImg from '../media/images/sponsors/rung.jpg';
-import movileImg from '../media/images/sponsors/movile.jpg';
-import hiplatformImg from '../media/images/sponsors/hiplatform.png';
 import r7Img from '../media/images/sponsors/r7.png';
 import ebanxLogo from '../media/images/sponsors/ebanxLogo.svg';
 import iClinicImg from '../media/images/sponsors/iclinic.png';
 import getninjasImg from '../media/images/sponsors/getninjas.svg';
+import tailImg from '../media/images/sponsors/tailLogo.svg';
 
 const styles = {
   container: css({
@@ -100,58 +93,15 @@ const Supporters = [
     avatar: getninjasImg,
     link: 'https://www.getninjas.com.br/',
   },
+  {
+    id: 18,
+    name: 'Tail',
+    avatar: tailImg,
+    link: 'https://www.tail.digital/',
+  },
 ];
 
-const SecondarySupporters = [
-  {
-    id: 10,
-    name: 'Concrete',
-    avatar: concreteImg,
-    link: 'http://concrete.com.br',
-  },
-  {
-    id: 11,
-    name: 'Rung',
-    avatar: rungImg,
-    link: 'https://www.rung.com.br/',
-  },
-  {
-    id: 8,
-    name: 'Luiza Labs',
-    avatar: luizaLabsImg,
-    link: 'http://luizalabs.com',
-  },
-  {
-    id: 12,
-    name: 'Movile',
-    avatar: movileImg,
-    link: 'https://www.movile.com/',
-  },
-  {
-    id: 6,
-    name: 'Rivendel',
-    avatar: rivendelImg,
-    link: 'https://rivendel.com.br/',
-  },
-  {
-    id: 7,
-    name: 'Greenmile',
-    avatar: greenmileImg,
-    link: 'http://greenmile.com/pt/greenmile/',
-  },
-  {
-    id: 9,
-    name: 'Stq Advertising',
-    avatar: stqImg,
-    link: 'https://stqpublicidade.com.br/',
-  },
-  {
-    id: 13,
-    name: 'Hi Platform',
-    avatar: hiplatformImg,
-    link: 'https://hiplatform.com/',
-  },
-];
+const SecondarySupporters = [];
 
 class TextSupporters extends PureComponent {
   render() {
@@ -179,29 +129,30 @@ class TextSupporters extends PureComponent {
           })}
         </div>
 
-        <div {...styles.cards}>
-          {SecondarySupporters.map(secondarySponsor => {
-            return (
-              <div key={secondarySponsor.id} {...styles.card}>
-                <a
-                  href={
-                    secondarySponsor.link +
-                    '?utm_source=reactconfbr-site&utm_medium=logo&utm_campaign=reactconfbr-2017'
-                  }
-                  title={secondarySponsor.name}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img
-                    src={secondarySponsor.avatar}
-                    alt={secondarySponsor.name}
-                    className="secondary"
-                  />
-                </a>
-              </div>
-            );
-          })}
-        </div>
+        {SecondarySupporters &&
+          <div {...styles.cards}>
+            {SecondarySupporters.map(secondarySponsor => {
+              return (
+                <div key={secondarySponsor.id} {...styles.card}>
+                  <a
+                    href={
+                      secondarySponsor.link +
+                      '?utm_source=reactconfbr-site&utm_medium=logo&utm_campaign=reactconfbr-2017'
+                    }
+                    title={secondarySponsor.name}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      src={secondarySponsor.avatar}
+                      alt={secondarySponsor.name}
+                      className="secondary"
+                    />
+                  </a>
+                </div>
+              );
+            })}
+          </div>}
       </div>
     );
   }

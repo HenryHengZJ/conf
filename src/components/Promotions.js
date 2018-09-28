@@ -5,14 +5,8 @@ import Globals from '../utils/Globals';
 import Text from './Text';
 
 import dneImg from '../media/images/sponsors/dne.svg';
-import codamosImg from '../media/images/sponsors/codamos.jpg';
 import jsladiesImg from '../media/images/sponsors/jsladies.png';
-import nodebrImg from '../media/images/sponsors/nodebr.jpg';
-import trainingcenterImg from '../media/images/sponsors/trainingcenter.jpg';
-import braziljsImg from '../media/images/sponsors/braziljs.png';
 import infoqImg from '../media/images/sponsors/infoqbrasil.png';
-import tablelessImg from '../media/images/sponsors/tableless.png';
-import geekhunterImg from '../media/images/sponsors/geekhunter.jpg';
 
 const styles = {
   container: css({
@@ -76,42 +70,6 @@ const Promotions = [
     name: 'jsladies',
     avatar: jsladiesImg,
     link: 'https://github.com/jsladiesbr',
-  },
-  {
-    id: 10,
-    name: 'codamos',
-    avatar: codamosImg,
-    link: 'http://www.codamos.club/',
-  },
-  {
-    id: 12,
-    name: 'NodeBR',
-    avatar: nodebrImg,
-    link: 'https://github.com/nodebr',
-  },
-  {
-    id: 13,
-    name: 'Training Center',
-    avatar: trainingcenterImg,
-    link: 'https://github.com/training-center',
-  },
-  {
-    id: 14,
-    name: 'Brazil JS',
-    avatar: braziljsImg,
-    link: 'https://braziljs.org',
-  },
-  {
-    id: 16,
-    name: 'Tableless ',
-    avatar: tablelessImg,
-    link: 'https://tableless.com.br',
-  },
-  {
-    id: 17,
-    name: 'GeekHunter',
-    avatar: geekhunterImg,
-    link: 'https://geekhunter.com.br/',
   },
 ];
 
