@@ -246,8 +246,8 @@ export const speakers = [
     origin: 'Curitiba, PR',
     github: 'https://github.com/fdaciuk',
     avatar: da2kImg,
-    worksIn: 'Zimp',
-    worksLink: ' https://zimp.me',
+    worksIn: 'queroser.ninja',
+    worksLink: ' https://queroser.ninja',
     ytURL: 'https://youtu.be/ZHpVZYnGx6s',
   },
   {
