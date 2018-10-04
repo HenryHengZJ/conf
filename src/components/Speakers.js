@@ -17,6 +17,8 @@ import HugoBessaImg from '../media/images/speakers/hugoBessa.jpg';
 import GuilhermeJaburImg from '../media/images/speakers/guilhermeJabur.jpg';
 import LuizCamargoImg from '../media/images/speakers/luizCamargo.png';
 import mairaBelloImg from '../media/images/speakers/mairaBello.jpg';
+import da2kImg from '../media/images/speakers/da2k.jpg';
+import sibeliusImg from '../media/images/speakers/sibelius.jpg';
 import ytIcon from '../media/icons/ytIcon.png';
 
 const styles = {
@@ -236,6 +238,28 @@ export const speakers = [
     worksIn: 'In Loco',
     worksLink: 'https://www.inlocomedia.com',
     ytURL: 'https://youtu.be/zQG2uL-KUtg',
+  },
+  {
+    id: 14,
+    name: 'Fernando Daciuk',
+    theme: 'O poder do SSR',
+    origin: 'Curitiba, PR',
+    github: 'https://github.com/fdaciuk',
+    avatar: da2kImg,
+    worksIn: 'Zimp',
+    worksLink: ' https://zimp.me',
+    ytURL: 'https://youtu.be/ZHpVZYnGx6s',
+  },
+  {
+    id: 15,
+    name: 'Sibelius Seraphini',
+    theme: 'Deferred rendering e fetching com GraphQL e React',
+    origin: 'São Paulo, SP',
+    github: 'https://github.com/sibelius',
+    avatar: sibeliusImg,
+    worksIn: 'Feedback House',
+    worksLink: 'https://feedback.house',
+    ytURL: 'https://youtu.be/4YjT7-ZcDtI',
   },
 ];
 
