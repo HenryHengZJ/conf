@@ -19,6 +19,7 @@ import LuizCamargoImg from '../media/images/speakers/luizCamargo.png';
 import mairaBelloImg from '../media/images/speakers/mairaBello.jpg';
 import da2kImg from '../media/images/speakers/da2k.jpg';
 import sibeliusImg from '../media/images/speakers/sibelius.jpg';
+import matheusImg from '../media/images/speakers/matheus.jpg';
 import ytIcon from '../media/icons/ytIcon.png';
 
 const styles = {
@@ -34,7 +35,7 @@ const styles = {
     color: '#666666',
   }),
   name: css({
-    fontSize: '1.999em',
+    fontSize: '1.7em',
     color: Globals.colors.primary,
     fontWeight: 'light',
     margin: '0.66em 0 0.15em 0',
@@ -42,6 +43,9 @@ const styles = {
     '> a': {
       textDecoration: 'none',
       color: '#222',
+    },
+    '@media(max-width: 720px)': {
+      fontSize: '1.9em',
     },
   }),
   locale: css({
@@ -59,13 +63,16 @@ const styles = {
     },
   }),
   theme: css({
-    fontSize: '1.414em',
+    fontSize: '1.2em',
     color: Globals.colors.subheader,
     margin: '0 0 0.33em 0',
     fontWeight: 'lighter',
+    '@media(max-width: 720px)': {
+      fontSize: '1.4em',
+    },
   }),
   card: css({
-    width: 300,
+    width: 230,
     maxWidth: '100%',
     padding: '0',
     backgroundColor: Globals.colors.white,
@@ -73,6 +80,9 @@ const styles = {
     margin: '10px 10px 4em',
     '@media(min-width: 720px)': {
       margin: '10px 10px 1em',
+    },
+    '@media(max-width: 720px)': {
+      width: 300,
     },
     '> a': {
       overflow: 'hidden',
@@ -261,6 +271,18 @@ export const speakers = [
     worksLink: 'https://feedback.house',
     ytURL: 'https://youtu.be/4YjT7-ZcDtI',
   },
+  {
+    id: 16,
+    name: 'Matheus Marsiglio',
+    theme:
+      'Meu próprio conjunto de regras para viver uma vida longa com state containers',
+    origin: 'São Paulo, SP',
+    github: 'https://github.com/mtmr0x',
+    avatar: matheusImg,
+    worksIn: '',
+    worksLink: '',
+    ytURL: 'https://youtu.be/jzW2WEzW0U8',
+  },
 ];
 
 class TextSpeakers extends PureComponent {
@@ -281,7 +303,7 @@ class TextSpeakers extends PureComponent {
                     backgroundImage: `url('${speaker.avatar}')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    height: 300,
+                    height: 230,
                     display: 'block',
                     borderRadius: 4,
                     filter: 'grayscale(100%)',
@@ -290,6 +312,9 @@ class TextSpeakers extends PureComponent {
                       '> img': {
                         opacity: 1,
                       },
+                    },
+                    '@media(max-width: 720px)': {
+                      height: 300,
                     },
                   })}
                 >
