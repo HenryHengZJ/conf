@@ -52,7 +52,7 @@ class TextVenue extends PureComponent {
           subtitle="Estacione em nosso Parceiro"
         >
           <p>
-            <b {...styles.boldText}>PENTA PARK - R$15,00 das 6:30h às 23:00h</b>
+            <b {...styles.boldText}>PantaPark - R$15,00 das 6:30h às 23:00h</b>
             <br />
             Av. brigadeiro Luis Antônio, 759 - 1 subsolo, Bela Vista.
             <br />
