@@ -4,6 +4,7 @@ import Globals from '../utils/Globals';
 
 import Event from './Event';
 import Venue from './Venue';
+import Park from './Park';
 import Speakers from './Speakers';
 //import Schedule from './Schedule';
 import TextSC4P from './C4P';
@@ -33,6 +34,7 @@ class App extends PureComponent {
       <div {...styles.container}>
         <Event />
         <Venue />
+        <Park />
         <Speakers />
         {/*<Schedule />*/}
         <TextSC4P />
