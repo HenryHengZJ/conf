@@ -54,7 +54,7 @@ class TextVenue extends PureComponent {
           <p>
             <b {...styles.boldText}>PantaPark - R$15,00 das 6:30h às 23:00h</b>
             <br />
-            Av. brigadeiro Luis Antônio, 759 - 1 subsolo, Bela Vista.
+            Av. brigadeiro Luis Antônio, 759 - 1º subsolo, Bela Vista.
             <br />
             Telefone: (11) 3105-6492
           </p>
