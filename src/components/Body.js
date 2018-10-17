@@ -6,7 +6,7 @@ import Event from './Event';
 import Venue from './Venue';
 import Park from './Park';
 import Speakers from './Speakers';
-//import Schedule from './Schedule';
+import Schedule from './Schedule';
 import TextSC4P from './C4P';
 import TextSponsor from './Sponsor';
 import Supporters from './Supporters';
@@ -36,7 +36,7 @@ class App extends PureComponent {
         <Venue />
         <Park />
         <Speakers />
-        {/*<Schedule />*/}
+        <Schedule />
         <TextSC4P />
         <TextSponsor />
         <BeSponsor />

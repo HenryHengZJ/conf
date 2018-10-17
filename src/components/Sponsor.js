@@ -10,6 +10,7 @@ import quantoImg from '../media/images/sponsors/quanto.jpg';
 import telnyxImg from '../media/images/sponsors/telnyx.svg';
 import maxmilhasImg from '../media/images/sponsors/maxmilhas.svg';
 import vagasImg from '../media/images/sponsors/vagas.svg';
+import creditasImg from '../media/images/sponsors/Logo_Creditas.svg';
 import moteefeImg from '../media/images/sponsors/moteefe.png';
 import daitanGroupImg from '../media/images/sponsors/daitanGroup.png';
 
@@ -85,12 +86,18 @@ const Plenos = [
 const Juniors = [
   {
     id: 3,
+    name: 'Creditas',
+    avatar: creditasImg,
+    link: 'http://www.creditas.com.br',
+  },
+  {
+    id: 4,
     name: 'MaxMilhas',
     avatar: maxmilhasImg,
     link: 'http://www.maxmilhas.com.br',
   },
   {
-    id: 4,
+    id: 5,
     name: 'VAGAS.com.br',
     avatar: vagasImg,
     link: 'http://www.vagas.com.br',
@@ -99,7 +106,7 @@ const Juniors = [
 
 const Padawans = [
   {
-    id: 5,
+    id: 6,
     name: 'Globo.com',
     avatar: globoImg,
     link: 'http://www.globo.com',
