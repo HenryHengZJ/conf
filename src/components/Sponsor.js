@@ -112,19 +112,19 @@ const Padawans = [
     link: 'http://www.globo.com',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Quanto',
     avatar: quantoImg,
     link: 'http://contaquanto.com.br',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Pipefy',
     avatar: pipefyImg,
     link: 'https://www.pipefy.com',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Moteefe',
     avatar: moteefeImg,
     link: 'https://www.moteefe.com',
