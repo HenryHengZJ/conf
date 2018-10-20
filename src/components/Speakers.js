@@ -247,7 +247,7 @@ export const speakers = [
     avatar: renatoImg,
     worksIn: 'Creditas',
     worksLink: 'https://www.creditas.com.br',
-    ytURL: '',
+    ytURL: 'https://youtu.be/icnLv0sj2BY',
   },
   {
     id: 14,
