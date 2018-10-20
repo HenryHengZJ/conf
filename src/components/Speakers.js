@@ -16,10 +16,10 @@ import RaphaelAmorimImg from '../media/images/speakers/raphaelAmorim.jpg';
 import HugoBessaImg from '../media/images/speakers/hugoBessa.jpg';
 import GuilhermeJaburImg from '../media/images/speakers/guilhermeJabur.jpg';
 import LuizCamargoImg from '../media/images/speakers/luizCamargo.png';
-import mairaBelloImg from '../media/images/speakers/mairaBello.jpg';
 import da2kImg from '../media/images/speakers/da2k.jpg';
 import sibeliusImg from '../media/images/speakers/sibelius.jpg';
 import matheusImg from '../media/images/speakers/matheus.jpg';
+import renatoImg from '../media/images/speakers/renato.jpeg';
 import ytIcon from '../media/icons/ytIcon.png';
 
 const styles = {
@@ -240,14 +240,14 @@ export const speakers = [
   },
   {
     id: 13,
-    name: 'Maira Bello',
-    theme: 'Escalando o GraphQL',
-    origin: 'Recife, PE',
-    github: 'https://github.com/mairatma',
-    avatar: mairaBelloImg,
-    worksIn: 'In Loco',
-    worksLink: 'https://www.inlocomedia.com',
-    ytURL: 'https://youtu.be/zQG2uL-KUtg',
+    name: 'Renato Benkendorf',
+    theme: 'Modeling GraphQL APIs',
+    origin: 'São Paulo, SP',
+    github: 'https://github.com/renatobenks',
+    avatar: renatoImg,
+    worksIn: 'Creditas',
+    worksLink: 'https://www.creditas.com.br',
+    ytURL: '',
   },
   {
     id: 14,
