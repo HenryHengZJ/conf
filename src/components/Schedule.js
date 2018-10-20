@@ -96,7 +96,8 @@ const eventsList = [
   },
   {
     title: 'After Party',
-    description: 'Open Bar (+18)',
+    description:
+      'Open Bar (+18) Treze de Maio Show - R. Treze de Maio, 409 - Bela Vista, São Paulo',
     time: '7:00 pm - 10:00 pm',
   },
 ];
