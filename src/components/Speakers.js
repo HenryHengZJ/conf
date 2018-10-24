@@ -127,6 +127,7 @@ export const speakers = [
     id: 2,
     name: 'Pedro Nauck',
     theme: 'Docz: de 0 a 5.000 ⭐️ em 2 semanas',
+    talk: 'https://speakerdeck.com/pedronauck/reactconf-2018-presenting-docz',
     origin: 'Florianópolis, SC',
     github: 'https://github.com/pedronauck',
     avatar: PedroNauckImg,
