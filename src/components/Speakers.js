@@ -70,6 +70,14 @@ const styles = {
     '@media(max-width: 720px)': {
       fontSize: '1.4em',
     },
+    '> a': {
+      color: Globals.colors.subheader,
+      textDecoration: 'none',
+    },
+    '> a:hover': {
+      color: Globals.colors.subheader,
+      textDecoration: 'underline',
+    },
   }),
   card: css({
     width: 230,
@@ -131,6 +139,8 @@ export const speakers = [
     name: 'Guilherme Varandas',
     theme:
       'React Native no Banco do Brasil: Como RN nos faz poupar 1500 horas por projeto',
+    talk:
+      'https://www.icloud.com/keynote/0zIJ9Nrzh5ELy-X1ZuzaJKKoQ#ReactConfBR_-_GAM',
     origin: 'Brasília, DF',
     github: 'https://github.com/gvarandas',
     avatar: GuilhermeVarandasImg,
@@ -142,6 +152,7 @@ export const speakers = [
     id: 4,
     name: 'Bruno da Hora',
     theme: 'Otimize seu bundle com Webpack 4 e Create React App',
+    talk: 'http://bit.ly/react_conf_brunodahora',
     origin: 'Curitiba, PR',
     github: 'https://github.com/brunodahora',
     avatar: BrunoDahoraImg,
@@ -164,6 +175,8 @@ export const speakers = [
     id: 6,
     name: 'Nicholas Eduardo',
     theme: 'Como escalar projetos React com Monorepo',
+    talk:
+      'https://docs.google.com/presentation/d/1jzNwlew9qy9czg34PCOy3z4lKw4KofLZSnbHulXe9E0/edit?usp=sharing',
     origin: 'Florianópolis, SC',
     ytURL: 'https://www.youtube.com/watch?v=fzvmz0aUw14',
     avatar: NicholasImg,
@@ -175,6 +188,7 @@ export const speakers = [
     id: 7,
     name: 'Larissa Farias',
     theme: 'TypeScript vs Flow no segundo semestre de 2018',
+    talk: 'https://slides.com/larissathaisdefarias/typescript-vs-flow/',
     origin: 'Joinville, SC',
     ytURL: 'https://www.youtube.com/watch?v=8fUVjPiwMIA',
     avatar: LarissaImg,
@@ -197,6 +211,8 @@ export const speakers = [
     id: 9,
     name: 'Raphael Porto',
     theme: 'A Jornada do React Native na Globo.com',
+    talk:
+      'https://speakerdeck.com/raphaelpor/a-jornada-do-react-native-na-globo-dot-com',
     origin: 'Rio de Janeiro, RJ',
     github: 'https://github.com/raphaelpor',
     avatar: RaphaelPortoImg,
@@ -208,6 +224,8 @@ export const speakers = [
     id: 10,
     name: 'Hugo Bessa',
     theme: 'Mantendo WebApps em produção sem dor de cabeça',
+    talk:
+      'https://speakerdeck.com/hugobessaa/mantendo-webapps-em-producao-sem-dor-de-cabeca',
     origin: 'Santos, SP',
     github: 'https://github.com/hugobessaa',
     avatar: HugoBessaImg,
@@ -242,6 +260,7 @@ export const speakers = [
     id: 13,
     name: 'Renato Benkendorf',
     theme: 'Modeling GraphQL APIs',
+    talk: 'https://speakerdeck.com/renatobenks/modeling-graphql-apis',
     origin: 'São Paulo, SP',
     github: 'https://github.com/renatobenks',
     avatar: renatoImg,
@@ -253,6 +272,8 @@ export const speakers = [
     id: 14,
     name: 'Fernando Daciuk',
     theme: 'O poder do SSR',
+    talk:
+      'https://docs.google.com/presentation/d/1lY5u-TeYDVdg4rfd5uWub2EYC8QHNqbvnbtYOIQg_qs/present',
     origin: 'Curitiba, PR',
     github: 'https://github.com/fdaciuk',
     avatar: da2kImg,
@@ -264,6 +285,7 @@ export const speakers = [
     id: 15,
     name: 'Sibelius Seraphini',
     theme: 'Deferred rendering e fetching com GraphQL e React',
+    talk: 'https://speakerdeck.com/sibelius/the-frontend-dichotomy',
     origin: 'São Paulo, SP',
     github: 'https://github.com/sibelius',
     avatar: sibeliusImg,
@@ -276,6 +298,8 @@ export const speakers = [
     name: 'Matheus Marsiglio',
     theme:
       'Meu próprio conjunto de regras para viver uma vida longa com state containers',
+    talk:
+      'https://www.icloud.com/keynote/0LZmoTka2s8xuTKJsEkUrniBA#happy-and-long-life-with-state-containers-pt',
     origin: 'São Paulo, SP',
     github: 'https://github.com/mtmr0x',
     avatar: matheusImg,
@@ -348,9 +372,16 @@ class TextSpeakers extends PureComponent {
                     </a>}
                   {speaker.origin}
                 </p>
-                <h4 {...styles.theme} className="notranslate">
-                  {speaker.theme}
-                </h4>
+                {speaker.talk &&
+                  <h4 {...styles.theme} className="notranslate">
+                    <a href={speaker.talk}>
+                      {speaker.theme}
+                    </a>
+                  </h4>}
+                {!speaker.talk &&
+                  <h4 {...styles.theme} className="notranslate">
+                    {speaker.theme}
+                  </h4>}
               </div>
             );
           })}
